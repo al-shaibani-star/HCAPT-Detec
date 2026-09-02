@@ -1,0 +1,27 @@
+{
+  "ace": 0.9827440058125454,
+  "n_samples": 16516,
+  "breakdown": {
+    "allow": {
+      "total": 11505,
+      "correct": 11469
+    },
+    "monitor": {
+      "total": 567,
+      "correct": 567
+    },
+    "challenge": {
+      "total": 2957,
+      "correct": 2913
+    },
+    "quarantine": {
+      "total": 1473,
+      "correct": 1268.0
+    },
+    "block": {
+      "total": 14,
+      "correct": 14
+    }
+  },
+  "dataset": "dapt-2020"
+}

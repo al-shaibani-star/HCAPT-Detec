@@ -1,0 +1,35 @@
+# datasets (download from the sources listed in the Data Availability Statement)
+data/
+# caches, trained models, large arrays
+cache/
+**/cache/
+models/
+*.npz
+*.npy
+*.joblib
+*.pt
+*.pth
+*.pkl
+*.h5
+# results are kept, except large binary arrays (covered above)
+# python / IDE
+__pycache__/
+*.pyc
+.idea/
+.ipynb_checkpoints/
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+paper/main.pdf
+# internal notes, drafts, and manuscript sources are not part of the code release
+docs/*
+!docs/UNIFIED_ARCHITECTURE.md
+paper/
+latex/
+*.bak

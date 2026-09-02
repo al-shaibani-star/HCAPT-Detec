@@ -1,0 +1,30 @@
+{
+  "dataset": "dapt-2020",
+  "n_trials": 30,
+  "best_val_f1": 0.9308580616868879,
+  "best_params": {
+    "rf_n": 400,
+    "rf_d": 20,
+    "xgb_n": 500,
+    "xgb_d": 9,
+    "xgb_lr": 0.03389401116706152,
+    "cat_n": 300,
+    "cat_d": 7,
+    "cat_lr": 0.1432895233088083,
+    "dnn_topo": "512_256_128",
+    "dnn_dropout": 0.25859533922754646,
+    "dnn_lr": 0.002185245012528287,
+    "dnn_epochs": 18
+  },
+  "test_acc": 0.9648825381448293,
+  "test_f1": 0.9320524835988754,
+  "test_fpr": 0.034321246870709844,
+  "optuna_time_s": 703.7,
+  "final_train_time_s": 19.4,
+  "models_in_ensemble": [
+    "RF",
+    "XGB",
+    "CatBoost",
+    "DNN"
+  ]
+}

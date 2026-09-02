@@ -1,0 +1,30 @@
+{
+  "total_time_s": 855.5590867996216,
+  "phase_A3_fl": {
+    "final_val_acc": 0.9957234497505346,
+    "test_acc": 0.7765259048970902
+  },
+  "phase_A4_ensemble": {
+    "rf_acc": 0.9984556901876931,
+    "xgb_acc": 0.9992872416250891,
+    "nn_acc": 0.9957234497505346,
+    "weights": [
+      0.335413156471639,
+      0.338213918143612,
+      0.326372925384749
+    ],
+    "nn_source": "FL"
+  },
+  "phase_A5_blockchain": {
+    "blocks": 30,
+    "iocs": 400,
+    "verified": true,
+    "consensus": "poa"
+  },
+  "phase_A6_zt": {
+    "binary_accuracy": 0.9982181040627227,
+    "train_time_s": 5.440735101699829,
+    "feature_subset_size": 20,
+    "model_type": "lgb"
+  }
+}

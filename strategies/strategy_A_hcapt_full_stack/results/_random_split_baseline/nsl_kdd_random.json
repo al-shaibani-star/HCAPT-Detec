@@ -1,0 +1,21 @@
+{
+  "accuracy": 0.9964987880420145,
+  "precision": 0.9976150392817059,
+  "recall": 0.9951021550517772,
+  "f1": 0.9963570127504554,
+  "fpr": 0.002206073189722294,
+  "tp": 7111,
+  "fp": 17,
+  "tn": 7689,
+  "fn": 35,
+  "protocol": "FIDMF-style random 90:10 of combined Train+/Test+",
+  "n_train": 133665,
+  "n_test": 14852,
+  "ensemble_weights": [
+    0.3410065321435915,
+    0.3456295826805201,
+    0.31336388517588837
+  ],
+  "train_time_s": 19.8,
+  "note": "Reported as Appendix A baseline. Headline number uses official KDDTrain+/KDDTest+ split, see Section 6."
+}

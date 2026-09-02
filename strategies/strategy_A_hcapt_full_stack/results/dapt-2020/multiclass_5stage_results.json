@@ -1,0 +1,98 @@
+{
+  "dataset": "dapt-2020",
+  "task": "multiclass-5way",
+  "class_names": [
+    "Normal",
+    "Reconnaissance",
+    "Establish Foothold",
+    "Lateral Movement",
+    "Data Exfiltration"
+  ],
+  "n_train": 66061,
+  "n_test": 16516,
+  "train_time_s": 12.8,
+  "per_class_report": {
+    "Normal": {
+      "precision": 0.9827063355462667,
+      "recall": 0.9682629411289672,
+      "f1-score": 0.9754311747478035,
+      "support": 12383.0
+    },
+    "Reconnaissance": {
+      "precision": 0.8508033664881408,
+      "recall": 0.9336691855583543,
+      "f1-score": 0.8903122497998399,
+      "support": 2382.0
+    },
+    "Establish Foothold": {
+      "precision": 0.985207100591716,
+      "recall": 0.9674607786170831,
+      "f1-score": 0.9762532981530343,
+      "support": 1721.0
+    },
+    "Lateral Movement": {
+      "precision": 0.5,
+      "recall": 0.18518518518518517,
+      "f1-score": 0.2702702702702703,
+      "support": 27.0
+    },
+    "Data Exfiltration": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "accuracy": 0.9617946233954953,
+    "macro avg": {
+      "precision": 0.8637433605252248,
+      "recall": 0.6775822847645847,
+      "f1-score": 0.7224533985941897,
+      "support": 16516.0
+    },
+    "weighted avg": {
+      "precision": 0.9631573984113899,
+      "recall": 0.9617946233954953,
+      "f1-score": 0.9620015281753413,
+      "support": 16516.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      11990,
+      381,
+      11,
+      1,
+      0
+    ],
+    [
+      146,
+      2224,
+      10,
+      2,
+      0
+    ],
+    [
+      45,
+      9,
+      1665,
+      2,
+      0
+    ],
+    [
+      18,
+      0,
+      4,
+      5,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "macro_f1": 0.7224533985941897,
+  "weighted_f1": 0.9620015281753413
+}

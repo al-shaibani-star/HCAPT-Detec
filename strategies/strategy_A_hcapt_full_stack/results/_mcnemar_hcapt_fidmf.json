@@ -1,0 +1,74 @@
+{
+  "test": "McNemar's test, HCAPT-ensemble vs FIDMF-Att-LSTM",
+  "alpha_bonferroni": 0.0125,
+  "results": [
+    {
+      "dataset": "nsl-kdd",
+      "n_test": 22544,
+      "hcapt_accuracy": 0.7889017033356991,
+      "fidmf_accuracy": 0.7882806955287438,
+      "contingency": {
+        "both_right": 16740,
+        "hcapt_only": 1045,
+        "fidmf_only": 1031,
+        "both_wrong": 3728
+      },
+      "mcnemar_exact_p": 0.7754083343425446,
+      "mcnemar_asymp_chi2": 0.08140655105973026,
+      "mcnemar_asymp_p": 0.7754002687541152,
+      "winner": "HCAPT",
+      "delta_acc_pp": 0.06210078069552871
+    },
+    {
+      "dataset": "ton-iot-telemetry",
+      "n_test": 52224,
+      "hcapt_accuracy": 0.7862477022058824,
+      "fidmf_accuracy": 0.7157628676470589,
+      "contingency": {
+        "both_right": 36904,
+        "hcapt_only": 4157,
+        "fidmf_only": 476,
+        "both_wrong": 10687
+      },
+      "mcnemar_exact_p": 0.0,
+      "mcnemar_asymp_chi2": 2923.0304338441615,
+      "mcnemar_asymp_p": 0.0,
+      "winner": "HCAPT",
+      "delta_acc_pp": 7.048483455882348
+    },
+    {
+      "dataset": "edge-iiotset",
+      "n_test": 31560,
+      "hcapt_accuracy": 0.9094423320659062,
+      "fidmf_accuracy": 0.8994613434727503,
+      "contingency": {
+        "both_right": 28340,
+        "hcapt_only": 362,
+        "fidmf_only": 47,
+        "both_wrong": 2811
+      },
+      "mcnemar_exact_p": 2.4214264697421618e-61,
+      "mcnemar_asymp_chi2": 241.06601466992666,
+      "mcnemar_asymp_p": 0.0,
+      "winner": "HCAPT",
+      "delta_acc_pp": 0.9980988593155882
+    },
+    {
+      "dataset": "dapt-2020",
+      "n_test": 16516,
+      "hcapt_accuracy": 0.962884475659966,
+      "fidmf_accuracy": 0.8090942116735287,
+      "contingency": {
+        "both_right": 13063,
+        "hcapt_only": 2840,
+        "fidmf_only": 300,
+        "both_wrong": 313
+      },
+      "mcnemar_exact_p": 0.0,
+      "mcnemar_asymp_chi2": 2053.0321656050955,
+      "mcnemar_asymp_p": 0.0,
+      "winner": "HCAPT",
+      "delta_acc_pp": 15.379026398643736
+    }
+  ]
+}

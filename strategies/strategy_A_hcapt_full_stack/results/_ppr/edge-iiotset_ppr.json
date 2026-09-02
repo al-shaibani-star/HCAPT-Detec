@@ -1,0 +1,12 @@
+{
+  "dataset": "edge-iiotset",
+  "eps": 5.0,
+  "delta": 1e-05,
+  "n_members": 5000,
+  "n_nonmembers": 5000,
+  "attack_auc_dp": 0.50102428,
+  "attack_auc_raw": 0.50202872,
+  "ppr_dp": 0.99795144,
+  "ppr_raw": 0.99594256,
+  "ppr_dp_benefit": 0.0020088799999999907
+}

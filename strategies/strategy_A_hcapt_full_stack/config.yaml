@@ -1,0 +1,133 @@
+# Strategy A — HCAPT-Defense Full Stack Configuration
+# All hyperparameters in one place. Hash of this file invalidates cache.
+
+seed: 42
+
+# Datasets to run when --dataset all is passed.
+# Each entry maps to a loader in src/loaders/.
+datasets:
+  - name: nsl-kdd
+    loader: nsl_kdd
+    enabled: true
+  - name: ton-iot-telemetry
+    loader: ton_iot_telemetry
+    enabled: false              # Phase 2
+  - name: edge-iiotset
+    loader: edge_iiotset
+    enabled: false              # Phase 2
+
+# Ablation matrix — order matters (each row reuses prior caches when possible).
+ablation:
+  - id: ens_no_gan
+    description: "Ensemble only (baseline)"
+    use_gan: false
+    use_fl:  false
+    use_bc:  false
+    use_dp:  false
+    use_zt:  false
+  - id: ens_gan
+    description: "Ensemble + WGAN-GP"
+    use_gan: true
+    use_fl:  false
+    use_bc:  false
+    use_dp:  false
+    use_zt:  false
+  - id: ens_gan_zt
+    description: "Ensemble + WGAN-GP + Zero-Trust"
+    use_gan: true
+    use_fl:  false
+    use_bc:  false
+    use_dp:  false
+    use_zt:  true
+  - id: ens_gan_fl
+    description: "Ensemble + WGAN-GP + Federated Learning"
+    use_gan: true
+    use_fl:  true
+    use_bc:  false
+    use_dp:  false
+    use_zt:  false
+  - id: ens_gan_fl_bc
+    description: "Ensemble + WGAN-GP + FL + Blockchain"
+    use_gan: true
+    use_fl:  true
+    use_bc:  true
+    use_dp:  false
+    use_zt:  false
+  - id: full
+    description: "FULL: Ensemble + WGAN-GP + FL + Blockchain + DP + Zero-Trust"
+    use_gan: true
+    use_fl:  true
+    use_bc:  true
+    use_dp:  true
+    use_zt:  true
+
+# Component hyperparameters (delegated to existing modules in src/).
+gan:
+  type: "wgan-gp"
+  latent_dim: 100
+  epochs: 100
+  batch_size: 128
+  lr: 0.0002
+  n_critic: 5
+
+ensemble:
+  rf:
+    n_estimators: 200
+    max_depth: 20
+    min_samples_split: 5
+  xgb:
+    n_estimators: 300
+    max_depth: 8
+    learning_rate: 0.1
+    tree_method: "gpu_hist"
+  dnn:
+    hidden_layers: [256, 128, 64]
+    dropout: 0.3
+    epochs: 50
+    batch_size: 256
+    lr: 0.0001
+
+federated:
+  n_clients: 5
+  n_rounds: 20
+  local_epochs: 5
+  client_lr: 0.0001
+  aggregator: "fedavg"
+
+blockchain:
+  consensus: "PoA"
+  block_interval_s: 30
+
+differential_privacy:
+  epsilon: 5.0
+  delta: 1.0e-5
+  l2_clip: 1.0
+
+zero_trust:
+  feature_subset: "alternating"   # every other feature, indices 1,3,5,...
+  scorer: "lightgbm"
+  scorer_seed_offset: 777
+  thresholds:
+    challenge_normal_conf: 0.85
+    challenge_normal_risk: 0.70
+    block_attack_conf: 0.85
+    block_attack_risk: 0.70
+    quarantine_attack_conf: 0.55
+    quarantine_attack_risk: 0.40
+    monitor_low_conf: 0.55
+  context_weights:
+    flagged: 0.7
+    burst:   0.3
+
+# Evaluation
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - fpr
+  per_class: true
+  bootstrap_samples: 500
+  bootstrap_ci: 0.95
+  classification: "binary"        # binary | multiclass | both

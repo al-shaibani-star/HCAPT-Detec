@@ -1,0 +1,27 @@
+{
+  "ace": 0.847875266146203,
+  "n_samples": 22544,
+  "breakdown": {
+    "allow": {
+      "total": 12577,
+      "correct": 9366
+    },
+    "monitor": {
+      "total": 1154,
+      "correct": 1154
+    },
+    "challenge": {
+      "total": 6937,
+      "correct": 6789
+    },
+    "quarantine": {
+      "total": 1664,
+      "correct": 1597.5
+    },
+    "block": {
+      "total": 212,
+      "correct": 208
+    }
+  },
+  "dataset": "nsl-kdd"
+}

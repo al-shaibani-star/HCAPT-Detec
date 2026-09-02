@@ -1,0 +1,444 @@
+[
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.796,
+    "drop": 0.18145673916494676,
+    "timestamp": 1776782982.6644897
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.777,
+    "drop": 0.20045673916494677,
+    "timestamp": 1776782982.7440426
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.773,
+    "drop": 0.20445673916494678,
+    "timestamp": 1776782982.835451
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 1,
+    "samples_used": 1320,
+    "time_s": 0.14365291595458984,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782982.9791038
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.77,
+    "drop": 0.20745673916494678,
+    "timestamp": 1776782983.042665
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.762,
+    "drop": 0.2154567391649468,
+    "timestamp": 1776782983.1324291
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.761,
+    "drop": 0.2164567391649468,
+    "timestamp": 1776782983.2124858
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 2,
+    "samples_used": 1286,
+    "time_s": 0.14703631401062012,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782983.359522
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.756,
+    "drop": 0.2214567391649468,
+    "timestamp": 1776782983.4110143
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.765,
+    "drop": 0.21245673916494678,
+    "timestamp": 1776782983.5020745
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.757,
+    "drop": 0.2204567391649468,
+    "timestamp": 1776782983.595627
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 3,
+    "samples_used": 1298,
+    "time_s": 0.14801573753356934,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782983.7436428
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.74,
+    "drop": 0.2374567391649468,
+    "timestamp": 1776782983.7969897
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.738,
+    "drop": 0.2394567391649468,
+    "timestamp": 1776782983.8864315
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.752,
+    "drop": 0.2254567391649468,
+    "timestamp": 1776782983.9774616
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 4,
+    "samples_used": 1304,
+    "time_s": 0.1440291404724121,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782984.1214907
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.761,
+    "drop": 0.2164567391649468,
+    "timestamp": 1776782984.1733305
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.749,
+    "drop": 0.2284567391649468,
+    "timestamp": 1776782984.2635431
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.762,
+    "drop": 0.2154567391649468,
+    "timestamp": 1776782984.3506105
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 5,
+    "samples_used": 1308,
+    "time_s": 0.14088201522827148,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782984.4914925
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.774,
+    "drop": 0.20345673916494678,
+    "timestamp": 1776782984.5438952
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.745,
+    "drop": 0.2324567391649468,
+    "timestamp": 1776782984.6343505
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.742,
+    "drop": 0.2354567391649468,
+    "timestamp": 1776782984.7255242
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 6,
+    "samples_used": 1305,
+    "time_s": 0.14740562438964844,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782984.87393
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.765,
+    "drop": 0.21245673916494678,
+    "timestamp": 1776782984.9260635
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.768,
+    "drop": 0.20945673916494678,
+    "timestamp": 1776782985.0178697
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.77,
+    "drop": 0.20745673916494678,
+    "timestamp": 1776782985.1094382
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 7,
+    "samples_used": 1338,
+    "time_s": 0.1464674472808838,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782985.2559056
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.77,
+    "drop": 0.20745673916494678,
+    "timestamp": 1776782985.3216736
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.762,
+    "drop": 0.2154567391649468,
+    "timestamp": 1776782985.4123895
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.764,
+    "drop": 0.21345673916494678,
+    "timestamp": 1776782985.5017684
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 8,
+    "samples_used": 1363,
+    "time_s": 0.14702320098876953,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782985.6497915
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.759,
+    "drop": 0.2184567391649468,
+    "timestamp": 1776782985.7163646
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.767,
+    "drop": 0.21045673916494678,
+    "timestamp": 1776782985.7962642
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.772,
+    "drop": 0.20545673916494678,
+    "timestamp": 1776782985.8813124
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 9,
+    "samples_used": 1359,
+    "time_s": 0.1473078727722168,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782986.0286202
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.77,
+    "drop": 0.20745673916494678,
+    "timestamp": 1776782986.0954225
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.769,
+    "drop": 0.20845673916494678,
+    "timestamp": 1776782986.1841292
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.763,
+    "drop": 0.21445673916494679,
+    "timestamp": 1776782986.26266
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 10,
+    "samples_used": 1380,
+    "time_s": 0.147019624710083,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782986.4096797
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.761,
+    "drop": 0.2164567391649468,
+    "timestamp": 1776782986.462475
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.766,
+    "drop": 0.21145673916494678,
+    "timestamp": 1776782986.5530236
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.761,
+    "drop": 0.2164567391649468,
+    "timestamp": 1776782986.6428666
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 11,
+    "samples_used": 1372,
+    "time_s": 0.14815068244934082,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782986.7910173
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.755,
+    "drop": 0.2224567391649468,
+    "timestamp": 1776782986.8570542
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.77,
+    "drop": 0.20745673916494678,
+    "timestamp": 1776782986.9346573
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.776,
+    "drop": 0.20145673916494677,
+    "timestamp": 1776782987.0235183
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 12,
+    "samples_used": 1372,
+    "time_s": 0.13783955574035645,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782987.1613579
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.758,
+    "drop": 0.2194567391649468,
+    "timestamp": 1776782987.2136617
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.756,
+    "drop": 0.2214567391649468,
+    "timestamp": 1776782987.2924306
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.78,
+    "drop": 0.19745673916494677,
+    "timestamp": 1776782987.3715277
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 13,
+    "samples_used": 1389,
+    "time_s": 0.14806699752807617,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782987.5195947
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.763,
+    "drop": 0.21445673916494679,
+    "timestamp": 1776782987.585153
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.752,
+    "drop": 0.2254567391649468,
+    "timestamp": 1776782987.6639795
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.781,
+    "drop": 0.19645673916494677,
+    "timestamp": 1776782987.741839
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 14,
+    "samples_used": 1393,
+    "time_s": 0.25778865814208984,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782987.9996276
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.778,
+    "drop": 0.19945673916494677,
+    "timestamp": 1776782988.0792153
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.764,
+    "drop": 0.21345673916494678,
+    "timestamp": 1776782988.171815
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.758,
+    "drop": 0.2194567391649468,
+    "timestamp": 1776782988.2600708
+  },
+  {
+    "type": "retrain",
+    "retrain_num": 15,
+    "samples_used": 1397,
+    "time_s": 0.14002037048339844,
+    "new_baseline_acc": 0.9774567391649468,
+    "timestamp": 1776782988.4000912
+  },
+  {
+    "type": "drift",
+    "baseline_acc": 0.9774567391649468,
+    "current_acc": 0.764,
+    "drop": 0.21345673916494678,
+    "timestamp": 1776782988.4594479
+  }
+]

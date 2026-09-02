@@ -1,0 +1,38 @@
+[
+ {
+  "dataset": "nsl-kdd",
+  "eps": 5.0,
+  "delta": 1e-05,
+  "n_members": 5000,
+  "n_nonmembers": 5000,
+  "attack_auc_dp": 0.49124288,
+  "attack_auc_raw": 0.49138713999999994,
+  "ppr_dp": 0.98248576,
+  "ppr_raw": 0.9827742799999999,
+  "ppr_dp_benefit": -0.0002885199999999033
+ },
+ {
+  "dataset": "ton-iot-telemetry",
+  "eps": 5.0,
+  "delta": 1e-05,
+  "n_members": 5000,
+  "n_nonmembers": 5000,
+  "attack_auc_dp": 0.49724664,
+  "attack_auc_raw": 0.50174884,
+  "ppr_dp": 0.99449328,
+  "ppr_raw": 0.99650232,
+  "ppr_dp_benefit": -0.0020090400000000175
+ },
+ {
+  "dataset": "edge-iiotset",
+  "eps": 5.0,
+  "delta": 1e-05,
+  "n_members": 5000,
+  "n_nonmembers": 5000,
+  "attack_auc_dp": 0.50102428,
+  "attack_auc_raw": 0.50202872,
+  "ppr_dp": 0.99795144,
+  "ppr_raw": 0.99594256,
+  "ppr_dp_benefit": 0.0020088799999999907
+ }
+]

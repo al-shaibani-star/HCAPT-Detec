@@ -1,0 +1,12 @@
+{
+  "dataset": "nsl-kdd",
+  "n_test": 22544,
+  "ensemble_err_rate": 0.30695528743789924,
+  "risk_err_rate": 0.22688963804116394,
+  "Q_statistic": 0.9842504096396375,
+  "disagreement": 0.13311745919091555,
+  "double_fault": 0.21438076650106458,
+  "feature_subset_size": 20,
+  "expected_double_fault_if_independent": 0.0696449740616064,
+  "decorrelation_strength": "weak"
+}

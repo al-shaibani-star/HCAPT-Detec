@@ -1,0 +1,46 @@
+# Strategy A — Cross-dataset Comparison
+
+**Datasets:** dapt-2020, edge-iiotset, nsl-kdd, ton-iot-telemetry (4 total)
+
+## Comparison Matrix
+
+| dataset | config | accuracy | precision | recall | f1 | fpr |
+|---|---|---|---|---|---|---|
+| dapt-2020 | ens_no_gan | 0.9639 | 0.8998 | 0.9630 | 0.9303 | 0.0358 |
+| dapt-2020 | ens_gan | 0.9631 | 0.8954 | 0.9654 | 0.9291 | 0.0376 |
+| dapt-2020 | ens_gan_zt | 0.9630 | 0.8950 | 0.9654 | 0.9289 | 0.0378 |
+| dapt-2020 | ens_gan_fl | 0.9631 | 0.8954 | 0.9654 | 0.9291 | 0.0376 |
+| dapt-2020 | ens_gan_fl_bc | 0.9631 | 0.8954 | 0.9654 | 0.9291 | 0.0376 |
+| dapt-2020 | full | 0.9630 | 0.8950 | 0.9654 | 0.9289 | 0.0378 |
+| edge-iiotset | ens_no_gan | 0.9096 | 0.9109 | 0.9900 | 0.9488 | 0.5319 |
+| edge-iiotset | ens_gan | 0.9093 | 0.9091 | 0.9920 | 0.9487 | 0.5453 |
+| edge-iiotset | ens_gan_zt | 0.9093 | 0.9091 | 0.9920 | 0.9487 | 0.5453 |
+| edge-iiotset | ens_gan_fl | 0.9093 | 0.9091 | 0.9920 | 0.9487 | 0.5453 |
+| edge-iiotset | ens_gan_fl_bc | 0.9093 | 0.9091 | 0.9920 | 0.9487 | 0.5453 |
+| edge-iiotset | full | 0.9093 | 0.9091 | 0.9920 | 0.9487 | 0.5453 |
+| nsl-kdd | ens_no_gan | 0.7748 | 0.9672 | 0.6257 | 0.7598 | 0.0280 |
+| nsl-kdd | ens_gan | 0.7881 | 0.9667 | 0.6500 | 0.7774 | 0.0296 |
+| nsl-kdd | ens_gan_zt | 0.7904 | 0.9667 | 0.6543 | 0.7804 | 0.0298 |
+| nsl-kdd | ens_gan_fl | 0.7756 | 0.9666 | 0.6274 | 0.7610 | 0.0286 |
+| nsl-kdd | ens_gan_fl_bc | 0.7756 | 0.9666 | 0.6274 | 0.7610 | 0.0286 |
+| nsl-kdd | full | 0.7792 | 0.9668 | 0.6338 | 0.7657 | 0.0287 |
+| ton-iot-telemetry | ens_no_gan | 0.7894 | 0.7494 | 0.9734 | 0.8468 | 0.4840 |
+| ton-iot-telemetry | ens_gan | 0.7675 | 0.7311 | 0.9667 | 0.8326 | 0.5286 |
+| ton-iot-telemetry | ens_gan_zt | 0.7674 | 0.7310 | 0.9667 | 0.8325 | 0.5290 |
+| ton-iot-telemetry | ens_gan_fl | 0.7675 | 0.7311 | 0.9667 | 0.8326 | 0.5286 |
+| ton-iot-telemetry | ens_gan_fl_bc | 0.7675 | 0.7311 | 0.9667 | 0.8326 | 0.5286 |
+| ton-iot-telemetry | full | 0.7674 | 0.7310 | 0.9667 | 0.8325 | 0.5290 |
+
+## Best configuration per dataset
+
+- **dapt-2020:** `ens_no_gan` (F1 = 0.9303)
+- **edge-iiotset:** `ens_no_gan` (F1 = 0.9488)
+- **nsl-kdd:** `ens_gan_zt` (F1 = 0.7804)
+- **ton-iot-telemetry:** `ens_no_gan` (F1 = 0.8468)
+
+## Effect of full HCAPT stack vs ensemble baseline
+
+- **dapt-2020:** F1 base=0.9303 → full=0.9289 (Δ -0.0014)
+- **edge-iiotset:** F1 base=0.9488 → full=0.9487 (Δ -0.0001)
+- **nsl-kdd:** F1 base=0.7598 → full=0.7657 (Δ +0.0059)
+- **ton-iot-telemetry:** F1 base=0.8468 → full=0.8325 (Δ -0.0143)

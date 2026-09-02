@@ -1,0 +1,99 @@
+{
+  "subject_class": "DoS",
+  "full_support": 45927,
+  "test_partition": "KDDTest+ (held fixed)",
+  "generator": "WGAN-GP, conditional, balanced to the majority count",
+  "gan_epochs": 50,
+  "rows": [
+    {
+      "support": 100,
+      "requested": 100,
+      "seed": 0,
+      "recall_control": 0.636461126005362,
+      "recall_augmented": 0.6234584450402145,
+      "delta_pp": -1.300268096514745,
+      "seconds": 2910.4
+    },
+    {
+      "support": 100,
+      "requested": 100,
+      "seed": 1,
+      "recall_control": 0.6272117962466488,
+      "recall_augmented": 0.5898123324396782,
+      "delta_pp": -3.7399463806970568,
+      "seconds": 2722.9
+    },
+    {
+      "support": 1000,
+      "requested": 1000,
+      "seed": 0,
+      "recall_control": 0.7402144772117962,
+      "recall_augmented": 0.7316353887399464,
+      "delta_pp": -0.857908847184985,
+      "seconds": 2843.5
+    },
+    {
+      "support": 1000,
+      "requested": 1000,
+      "seed": 1,
+      "recall_control": 0.7383378016085791,
+      "recall_augmented": 0.7190348525469169,
+      "delta_pp": -1.930294906166219,
+      "seconds": 2918.9
+    },
+    {
+      "support": 5000,
+      "requested": 5000,
+      "seed": 0,
+      "recall_control": 0.7655495978552279,
+      "recall_augmented": 0.764343163538874,
+      "delta_pp": -0.12064343163539215,
+      "seconds": 2997.9
+    },
+    {
+      "support": 5000,
+      "requested": 5000,
+      "seed": 1,
+      "recall_control": 0.7675603217158177,
+      "recall_augmented": 0.7593833780160858,
+      "delta_pp": -0.8176943699731876,
+      "seconds": 3292.2
+    },
+    {
+      "support": 20000,
+      "requested": 20000,
+      "seed": 0,
+      "recall_control": 0.8087131367292225,
+      "recall_augmented": 0.7785522788203754,
+      "delta_pp": -3.016085790884715,
+      "seconds": 3496.4
+    },
+    {
+      "support": 20000,
+      "requested": 20000,
+      "seed": 1,
+      "recall_control": 0.7833780160857908,
+      "recall_augmented": 0.774798927613941,
+      "delta_pp": -0.857908847184985,
+      "seconds": 2851.7
+    },
+    {
+      "support": 45927,
+      "requested": 45927,
+      "seed": 0,
+      "recall_control": 0.8221179624664879,
+      "recall_augmented": 0.8124664879356568,
+      "delta_pp": -0.965147453083115,
+      "seconds": 4651.4
+    },
+    {
+      "support": 45927,
+      "requested": 45927,
+      "seed": 1,
+      "recall_control": 0.8151474530831099,
+      "recall_augmented": 0.7861930294906166,
+      "delta_pp": -2.895442359249323,
+      "seconds": 4323.7
+    }
+  ]
+}

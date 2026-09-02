@@ -1,0 +1,12 @@
+{
+  "dataset": "ton-iot-telemetry",
+  "eps": 5.0,
+  "delta": 1e-05,
+  "n_members": 5000,
+  "n_nonmembers": 5000,
+  "attack_auc_dp": 0.49724664,
+  "attack_auc_raw": 0.50174884,
+  "ppr_dp": 0.99449328,
+  "ppr_raw": 0.99650232,
+  "ppr_dp_benefit": -0.0020090400000000175
+}

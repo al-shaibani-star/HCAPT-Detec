@@ -1,0 +1,167 @@
+{
+  "dataset": "dapt-2020",
+  "n_trials": 10,
+  "best_validation_f1": 0.9290378754897692,
+  "best_params": {
+    "rf_n_estimators": 300,
+    "rf_max_depth": 10,
+    "xgb_n_estimators": 500,
+    "xgb_lr": 0.16967533607196555,
+    "xgb_max_depth": 5,
+    "dnn_dropout": 0.17272998688284025,
+    "dnn_topo": "128_64_32"
+  },
+  "test_metrics": {
+    "accuracy": 0.9625211915718092,
+    "precision": 0.8920124944221329,
+    "recall": 0.9673360754899588,
+    "f1": 0.9281485780615206,
+    "fpr": 0.03908584349511427,
+    "tp": 3998,
+    "fp": 484,
+    "tn": 11899,
+    "fn": 135
+  },
+  "all_trials": [
+    {
+      "number": 0,
+      "value": 0.9283425575298573,
+      "params": {
+        "rf_n_estimators": 200,
+        "rf_max_depth": 30,
+        "xgb_n_estimators": 400,
+        "xgb_lr": 0.07661100707771368,
+        "xgb_max_depth": 5,
+        "dnn_dropout": 0.16239780813448107,
+        "dnn_topo": "512_256_128"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 1,
+      "value": 0.9290378754897692,
+      "params": {
+        "rf_n_estimators": 300,
+        "rf_max_depth": 10,
+        "xgb_n_estimators": 500,
+        "xgb_lr": 0.16967533607196555,
+        "xgb_max_depth": 5,
+        "dnn_dropout": 0.17272998688284025,
+        "dnn_topo": "128_64_32"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 2,
+      "value": 0.9190901238122661,
+      "params": {
+        "rf_n_estimators": 250,
+        "rf_max_depth": 15,
+        "xgb_n_estimators": 350,
+        "xgb_lr": 0.01607123851203988,
+        "xgb_max_depth": 6,
+        "dnn_dropout": 0.2465447373174767,
+        "dnn_topo": "512_256_128"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 3,
+      "value": 0.9205020920502092,
+      "params": {
+        "rf_n_estimators": 250,
+        "rf_max_depth": 20,
+        "xgb_n_estimators": 100,
+        "xgb_lr": 0.07896186801026692,
+        "xgb_max_depth": 5,
+        "dnn_dropout": 0.12602063719411183,
+        "dnn_topo": "512_256_128"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 4,
+      "value": 0.9179951170472499,
+      "params": {
+        "rf_n_estimators": 200,
+        "rf_max_depth": 10,
+        "xgb_n_estimators": 400,
+        "xgb_lr": 0.044684675025045834,
+        "xgb_max_depth": 4,
+        "dnn_dropout": 0.29807076404450805,
+        "dnn_topo": "512_256_128"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 5,
+      "value": 0.924432885421182,
+      "params": {
+        "rf_n_estimators": 300,
+        "rf_max_depth": 15,
+        "xgb_n_estimators": 300,
+        "xgb_lr": 0.06420330336297862,
+        "xgb_max_depth": 5,
+        "dnn_dropout": 0.48783385110582345,
+        "dnn_topo": "512_256_128"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 6,
+      "value": 0.917225298746721,
+      "params": {
+        "rf_n_estimators": 300,
+        "rf_max_depth": 30,
+        "xgb_n_estimators": 100,
+        "xgb_lr": 0.01947558230629543,
+        "xgb_max_depth": 4,
+        "dnn_dropout": 0.23013213230530574,
+        "dnn_topo": "128_64_32"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 7,
+      "value": 0.9279396839205453,
+      "params": {
+        "rf_n_estimators": 200,
+        "rf_max_depth": 15,
+        "xgb_n_estimators": 300,
+        "xgb_lr": 0.016149614799999188,
+        "xgb_max_depth": 9,
+        "dnn_dropout": 0.12982025747190834,
+        "dnn_topo": "256_128_64"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 8,
+      "value": 0.9284667253004983,
+      "params": {
+        "rf_n_estimators": 100,
+        "rf_max_depth": 30,
+        "xgb_n_estimators": 400,
+        "xgb_lr": 0.11935262708510537,
+        "xgb_max_depth": 9,
+        "dnn_dropout": 0.12961786069363615,
+        "dnn_topo": "128_64_32"
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "number": 9,
+      "value": 0.917098445595855,
+      "params": {
+        "rf_n_estimators": 300,
+        "rf_max_depth": 15,
+        "xgb_n_estimators": 100,
+        "xgb_lr": 0.028797752657070342,
+        "xgb_max_depth": 6,
+        "dnn_dropout": 0.39184247133522565,
+        "dnn_topo": "512_256_128"
+      },
+      "state": "TrialState.COMPLETE"
+    }
+  ]
+}

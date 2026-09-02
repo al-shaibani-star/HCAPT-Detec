@@ -1,0 +1,18 @@
+{
+  "note": "regenerated for section 5.7; supersedes the unsourced 88/63/27 figures",
+  "partition": "prescribed KDDTest+",
+  "tie_rule": "attack (P4)",
+  "n_test_rows": 22544,
+  "n_cells": 22487,
+  "n_conflicting_cells": 54,
+  "rows_in_conflicting_cells": 108,
+  "conflict_rate": 0.004791,
+  "forced_false_positives": 54,
+  "colliding_attack_records": 54,
+  "by_family": {
+    "R2L": 54
+  },
+  "share_of_colliding_attack_records": {
+    "R2L": 1.0
+  }
+}

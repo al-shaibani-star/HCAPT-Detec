@@ -1,0 +1,12 @@
+{
+  "dataset": "edge-iiotset",
+  "n_test": 31560,
+  "ensemble_err_rate": 0.09071609632446134,
+  "risk_err_rate": 0.4068124207858048,
+  "Q_statistic": -0.5820696288064371,
+  "disagreement": 0.46730038022813686,
+  "double_fault": 0.01511406844106464,
+  "feature_subset_size": 14,
+  "expected_double_fault_if_independent": 0.03690443474999237,
+  "decorrelation_strength": "weak"
+}

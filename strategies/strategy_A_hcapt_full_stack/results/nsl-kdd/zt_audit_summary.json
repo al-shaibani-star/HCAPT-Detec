@@ -1,0 +1,10 @@
+{
+  "action_counts": {
+    "BLOCK": 6889,
+    "ALLOW": 11754,
+    "MONITOR": 2938,
+    "QUARANTINE": 934,
+    "CHALLENGE": 29
+  },
+  "total_samples": 22544
+}

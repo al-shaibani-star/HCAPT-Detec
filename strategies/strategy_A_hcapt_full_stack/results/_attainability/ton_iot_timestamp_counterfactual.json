@@ -1,0 +1,469 @@
+{
+  "spec_version": "attainability-1.0.0",
+  "analysis": "ton-iot timestamp counterfactual",
+  "generated_utc": "2026-08-27T14:00:05+00:00",
+  "script": {
+    "path": "E:\\Strudin\\Hussein2026\\05-Implementation\\strategies\\strategy_A_hcapt_full_stack\\src\\attainability_ton_iot_timestamps.py",
+    "sha256": "592e3b3a3ebadf672043ce966993b28cbda67c80d56a78883f91b95d8254775a"
+  },
+  "pipeline": "loader construction; float32; seed-42 stratified 80/20; StandardScaler fitted on train; identical across variants",
+  "both_horns": "A collapse of the floor when `date`/`time` are restored is NOT an argument for restoring them. A per-record timestamp is an identifier: a detector reading one exploits collection order, not behaviour. The finding is that the floor is a property of the preprocessing recipe rather than of the phenomenon, which is the claim this paper makes about benchmarks generally, here turned on its own instrument.",
+  "variants": [
+    {
+      "variant": "base",
+      "n_features": 18,
+      "added_columns": [],
+      "pooled": {
+        "cells": 116424,
+        "duplicate_rate": 0.5925497570073415,
+        "conflict_rate": 0.31313692224617895,
+        "forced_fp": 30989.0,
+        "floor_fpr": 0.29513333333333336,
+        "floor_recall": 0.9999231355568509
+      },
+      "split": {
+        "cells": 26324,
+        "duplicate_rate": 0.5265203737745098,
+        "conflict_rate": 0.3131510416666667,
+        "forced_fp": 6075.0,
+        "floor_fpr": 0.2892857142857143,
+        "floor_recall": 0.9979502946451447
+      },
+      "split_frontier_at_detector_recall": 0.24961904761904763,
+      "detector": {
+        "config": "full",
+        "fpr": 0.529,
+        "recall": 0.9667
+      },
+      "slack_pp": 27.93809523809524,
+      "slack_share": 0.5281303447655055,
+      "twin_rate": 0.5916819852941176,
+      "per_device": [
+        {
+          "device": "fridge",
+          "rows": 39944,
+          "benign_rows": 15000,
+          "forced_false_positives": 15000,
+          "device_floor_fpr": 1.0,
+          "share_of_total_floor": 0.48404272483784566
+        },
+        {
+          "device": "motion_light",
+          "rows": 39488,
+          "benign_rows": 15000,
+          "forced_false_positives": 15000,
+          "device_floor_fpr": 1.0,
+          "share_of_total_floor": 0.48404272483784566
+        },
+        {
+          "device": "thermostat",
+          "rows": 32774,
+          "benign_rows": 15000,
+          "forced_false_positives": 989,
+          "device_floor_fpr": 0.06593333333333333,
+          "share_of_total_floor": 0.03191455032430863
+        },
+        {
+          "device": "garage_door",
+          "rows": 39587,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "gps_tracker",
+          "rows": 38960,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "modbus",
+          "rows": 31106,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "weather",
+          "rows": 39260,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base+date",
+      "n_features": 19,
+      "added_columns": [
+        "date"
+      ],
+      "pooled": {
+        "cells": 117695,
+        "duplicate_rate": 0.5911480972277008,
+        "conflict_rate": 0.0,
+        "forced_fp": 0.0,
+        "floor_fpr": 0.0,
+        "floor_recall": 1.0
+      },
+      "split": {
+        "cells": 27323,
+        "duplicate_rate": 0.5236864276960784,
+        "conflict_rate": 0.0,
+        "forced_fp": 0.0,
+        "floor_fpr": 0.0,
+        "floor_recall": 1.0
+      },
+      "split_frontier_at_detector_recall": 0.0,
+      "detector": {
+        "config": "full",
+        "fpr": 0.529,
+        "recall": 0.9667
+      },
+      "slack_pp": 52.900000000000006,
+      "slack_share": 1.0,
+      "twin_rate": 0.5907054227941176,
+      "per_device": [
+        {
+          "device": "fridge",
+          "rows": 39944,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "garage_door",
+          "rows": 39587,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "gps_tracker",
+          "rows": 38960,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "modbus",
+          "rows": 31106,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "motion_light",
+          "rows": 39488,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "thermostat",
+          "rows": 32774,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "weather",
+          "rows": 39260,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base+time",
+      "n_features": 19,
+      "added_columns": [
+        "time"
+      ],
+      "pooled": {
+        "cells": 207746,
+        "duplicate_rate": 0.27493977841520534,
+        "conflict_rate": 0.0029258690482117347,
+        "forced_fp": 162.0,
+        "floor_fpr": 0.001542857142857143,
+        "floor_recall": 0.9997630013002902
+      },
+      "split": {
+        "cells": 46215,
+        "duplicate_rate": 0.15755208333333334,
+        "conflict_rate": 0.0005553002450980392,
+        "forced_fp": 13.0,
+        "floor_fpr": 0.000619047619047619,
+        "floor_recall": 0.9999679733538304
+      },
+      "split_frontier_at_detector_recall": 0.0,
+      "detector": {
+        "config": "full",
+        "fpr": 0.529,
+        "recall": 0.9667
+      },
+      "slack_pp": 52.900000000000006,
+      "slack_share": 1.0,
+      "twin_rate": 0.2581571691176471,
+      "per_device": [
+        {
+          "device": "motion_light",
+          "rows": 39488,
+          "benign_rows": 15000,
+          "forced_false_positives": 143,
+          "device_floor_fpr": 0.009533333333333333,
+          "share_of_total_floor": 0.8827160493827161
+        },
+        {
+          "device": "fridge",
+          "rows": 39944,
+          "benign_rows": 15000,
+          "forced_false_positives": 19,
+          "device_floor_fpr": 0.0012666666666666666,
+          "share_of_total_floor": 0.11728395061728394
+        },
+        {
+          "device": "garage_door",
+          "rows": 39587,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "gps_tracker",
+          "rows": 38960,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "modbus",
+          "rows": 31106,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "thermostat",
+          "rows": 32774,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "weather",
+          "rows": 39260,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base+date+time",
+      "n_features": 20,
+      "added_columns": [
+        "date",
+        "time"
+      ],
+      "pooled": {
+        "cells": 210453,
+        "duplicate_rate": 0.2585909106575929,
+        "conflict_rate": 0.0,
+        "forced_fp": 0.0,
+        "floor_fpr": 0.0,
+        "floor_recall": 1.0
+      },
+      "split": {
+        "cells": 46382,
+        "duplicate_rate": 0.15148207720588236,
+        "conflict_rate": 0.0,
+        "forced_fp": 0.0,
+        "floor_fpr": 0.0,
+        "floor_recall": 1.0
+      },
+      "split_frontier_at_detector_recall": 0.0,
+      "detector": {
+        "config": "full",
+        "fpr": 0.529,
+        "recall": 0.9667
+      },
+      "slack_pp": 52.900000000000006,
+      "slack_share": 1.0,
+      "twin_rate": 0.24306832107843138,
+      "per_device": [
+        {
+          "device": "fridge",
+          "rows": 39944,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "garage_door",
+          "rows": 39587,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "gps_tracker",
+          "rows": 38960,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "modbus",
+          "rows": 31106,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "motion_light",
+          "rows": 39488,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "thermostat",
+          "rows": 32774,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        },
+        {
+          "device": "weather",
+          "rows": 39260,
+          "benign_rows": 15000,
+          "forced_false_positives": 0,
+          "device_floor_fpr": 0.0,
+          "share_of_total_floor": 0.0
+        }
+      ]
+    }
+  ],
+  "label_oracle": {
+    "question": "does a timestamp column determine the label on its own?",
+    "date": {
+      "distinct_values": 9,
+      "label_conflicting_rows": 0.0
+    },
+    "time": {
+      "distinct_values": 56130,
+      "label_conflicting_rows": 0.15812330776389308
+    },
+    "date_time": {
+      "distinct_values": 78685,
+      "label_conflicting_rows": 0.0
+    },
+    "device_date": {
+      "distinct_values": 50,
+      "label_conflicting_rows": 0.0
+    },
+    "date_table": [
+      {
+        "date": "1-Apr-19",
+        "rows": 14007,
+        "attack": 0,
+        "benign": 14007,
+        "attack_share": 0.0,
+        "devices": 5
+      },
+      {
+        "date": "2-Apr-19",
+        "rows": 21216,
+        "attack": 0,
+        "benign": 21216,
+        "attack_share": 0.0,
+        "devices": 4
+      },
+      {
+        "date": "23-Apr-19",
+        "rows": 2198,
+        "attack": 2198,
+        "benign": 0,
+        "attack_share": 1.0,
+        "devices": 5
+      },
+      {
+        "date": "25-Apr-19",
+        "rows": 58950,
+        "attack": 58950,
+        "benign": 0,
+        "attack_share": 1.0,
+        "devices": 7
+      },
+      {
+        "date": "26-Apr-19",
+        "rows": 37825,
+        "attack": 37825,
+        "benign": 0,
+        "attack_share": 1.0,
+        "devices": 7
+      },
+      {
+        "date": "27-Apr-19",
+        "rows": 6116,
+        "attack": 6116,
+        "benign": 0,
+        "attack_share": 1.0,
+        "devices": 7
+      },
+      {
+        "date": "28-Apr-19",
+        "rows": 50116,
+        "attack": 50116,
+        "benign": 0,
+        "attack_share": 1.0,
+        "devices": 7
+      },
+      {
+        "date": "29-Apr-19",
+        "rows": 914,
+        "attack": 914,
+        "benign": 0,
+        "attack_share": 1.0,
+        "devices": 1
+      },
+      {
+        "date": "31-Mar-19",
+        "rows": 69777,
+        "attack": 0,
+        "benign": 69777,
+        "attack_share": 0.0,
+        "devices": 7
+      }
+    ],
+    "date_values_that_are_single_label": 9,
+    "rows_covered_by_single_label_dates": 261119,
+    "total_rows": 261119,
+    "verdict": "`date` takes 9 distinct values and 9 of them carry a single label, covering 261119 of 261119 rows. The column is a label oracle: benign telemetry was collected on one set of days and attack telemetry on another, with no overlap. Dropping it is therefore CORRECT, and the 29.5% floor is the true cost of a sound protocol on this corpus - not an artefact to be undone."
+  }
+}

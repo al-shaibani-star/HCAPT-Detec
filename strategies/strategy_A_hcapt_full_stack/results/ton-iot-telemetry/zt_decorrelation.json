@@ -1,0 +1,12 @@
+{
+  "dataset": "ton-iot-telemetry",
+  "n_test": 52224,
+  "ensemble_err_rate": 0.23247931985294118,
+  "risk_err_rate": 0.3167892156862745,
+  "Q_statistic": 0.7178210655040792,
+  "disagreement": 0.25484451593137253,
+  "double_fault": 0.14721200980392157,
+  "feature_subset_size": 9,
+  "expected_double_fault_if_independent": 0.07364694139949178,
+  "decorrelation_strength": "weak"
+}

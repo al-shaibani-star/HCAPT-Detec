@@ -1,0 +1,38 @@
+{
+  "spec_version": "attainability-1.0.0",
+  "generated_utc": "2026-08-27T13:41:41+00:00",
+  "script_sha256": "c936ccdfdde9287cc3569c57ff7765c7d8e9a5950ca01ce14e743122f01892e8",
+  "last_run_ton_iot_variant": "rebuild_raw",
+  "benchmarks": [
+    {
+      "benchmark": "dapt-2020",
+      "status": "ok",
+      "file": "dapt-2020.json",
+      "spec_version": "attainability-1.0.0"
+    },
+    {
+      "benchmark": "edge-iiotset",
+      "status": "ok",
+      "file": "edge-iiotset.json",
+      "spec_version": "attainability-1.0.0"
+    },
+    {
+      "benchmark": "nsl-kdd",
+      "status": "ok",
+      "file": "nsl-kdd.json",
+      "spec_version": "attainability-1.0.0"
+    },
+    {
+      "benchmark": "ton-iot-telemetry",
+      "status": "ok",
+      "file": "ton-iot-telemetry.json",
+      "spec_version": "attainability-1.0.0"
+    },
+    {
+      "benchmark": "ton-iot-telemetry",
+      "status": "ok",
+      "file": "ton-iot-telemetry__rebuild_raw.json",
+      "spec_version": "attainability-1.0.0"
+    }
+  ]
+}

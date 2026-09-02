@@ -1,0 +1,97 @@
+[
+  {
+    "model": "RandomForest",
+    "accuracy": 0.7384226401703335,
+    "precision_weighted": 0.7777689571554064,
+    "recall_weighted": 0.7384226401703335,
+    "f1_weighted": 0.6906567828891645,
+    "fpr": 0.027494593759654,
+    "per_class": {
+      "Normal": {
+        "precision": 0.6363881401617251,
+        "recall": 0.972505406240346,
+        "f1": 0.7693372978697406,
+        "support": 9711
+      },
+      "DoS": {
+        "precision": 0.9599664991624791,
+        "recall": 0.768230563002681,
+        "f1": 0.8534623976172747,
+        "support": 7460
+      },
+      "Probe": {
+        "precision": 0.8513119533527697,
+        "recall": 0.6030565881866997,
+        "f1": 0.7059961315280464,
+        "support": 2421
+      },
+      "R2L": {
+        "precision": 0.7272727272727273,
+        "recall": 0.0027729636048526864,
+        "f1": 0.0055248618784530384,
+        "support": 2885
+      },
+      "U2R": {
+        "precision": 0.5,
+        "recall": 0.05970149253731343,
+        "f1": 0.10666666666666667,
+        "support": 67
+      }
+    },
+    "train_time_s": 1.2260849475860596,
+    "inference_time_per_sample_ms": 0.0024634295105511114
+  },
+  {
+    "model": "XGBoost",
+    "accuracy": 0.7827803406671399,
+    "precision_weighted": 0.8304484489109305,
+    "recall_weighted": 0.7827803406671399,
+    "f1_weighted": 0.745707425382258,
+    "fpr": 0.02821542580578725,
+    "per_class": {
+      "Normal": {
+        "precision": 0.6883798964184112,
+        "recall": 0.9717845741942127,
+        "f1": 0.8058923996584116,
+        "support": 9711
+      },
+      "DoS": {
+        "precision": 0.9657427592650265,
+        "recall": 0.8313672922252011,
+        "f1": 0.8935311914709696,
+        "support": 7460
+      },
+      "Probe": {
+        "precision": 0.8168293816829382,
+        "recall": 0.7257331681123502,
+        "f1": 0.768591426071741,
+        "support": 2421
+      },
+      "R2L": {
+        "precision": 0.9711934156378601,
+        "recall": 0.08180242634315425,
+        "f1": 0.15089514066496162,
+        "support": 2885
+      },
+      "U2R": {
+        "precision": 0.7894736842105263,
+        "recall": 0.22388059701492538,
+        "f1": 0.3488372093023256,
+        "support": 67
+      }
+    },
+    "train_time_s": 22.39931058883667,
+    "inference_time_per_sample_ms": 0.012235175302639508
+  },
+  {
+    "model": "IsolationForest (binary)",
+    "accuracy": 0.8135202271114266,
+    "precision_weighted": 0.9280682607401528,
+    "recall_weighted": 0.7289020494038806,
+    "f1_weighted": 0.8165153631284916,
+    "fpr": 0.07465760477808671,
+    "train_time_s": 0.6440479755401611,
+    "inference_time_per_sample_ms": 0.005321248022692689,
+    "note": "Binary (Normal vs Attack) \u2014 trained on Normal only"
+  }
+]

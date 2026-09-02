@@ -1,0 +1,95 @@
+{
+  "ens_no_gan": {
+    "name": "ens_no_gan",
+    "binary": {
+      "accuracy": 0.9096324461343472,
+      "precision": 0.9109173616376043,
+      "recall": 0.99,
+      "f1": 0.9488136688323342,
+      "fpr": 0.5318930041152263,
+      "tp": 26433,
+      "fp": 2585,
+      "tn": 2275,
+      "fn": 267,
+      "config": "ens_no_gan"
+    }
+  },
+  "ens_gan": {
+    "name": "ens_gan",
+    "binary": {
+      "accuracy": 0.9092839036755387,
+      "precision": 0.9090503483543261,
+      "recall": 0.9920224719101124,
+      "f1": 0.948725755323531,
+      "fpr": 0.5452674897119342,
+      "tp": 26487,
+      "fp": 2650,
+      "tn": 2210,
+      "fn": 213,
+      "config": "ens_gan"
+    }
+  },
+  "ens_gan_zt": {
+    "name": "ens_gan_zt",
+    "binary": {
+      "accuracy": 0.9092839036755387,
+      "precision": 0.9090503483543261,
+      "recall": 0.9920224719101124,
+      "f1": 0.948725755323531,
+      "fpr": 0.5452674897119342,
+      "tp": 26487,
+      "fp": 2650,
+      "tn": 2210,
+      "fn": 213,
+      "config": "ens_gan_zt"
+    }
+  },
+  "ens_gan_fl": {
+    "name": "ens_gan_fl",
+    "binary": {
+      "accuracy": 0.9092839036755387,
+      "precision": 0.9090503483543261,
+      "recall": 0.9920224719101124,
+      "f1": 0.948725755323531,
+      "fpr": 0.5452674897119342,
+      "tp": 26487,
+      "fp": 2650,
+      "tn": 2210,
+      "fn": 213,
+      "config": "ens_gan_fl",
+      "note": "Phase 2: FL/BC/DP not yet trained \u2014 same as ens_gan"
+    }
+  },
+  "ens_gan_fl_bc": {
+    "name": "ens_gan_fl_bc",
+    "binary": {
+      "accuracy": 0.9092839036755387,
+      "precision": 0.9090503483543261,
+      "recall": 0.9920224719101124,
+      "f1": 0.948725755323531,
+      "fpr": 0.5452674897119342,
+      "tp": 26487,
+      "fp": 2650,
+      "tn": 2210,
+      "fn": 213,
+      "config": "ens_gan_fl_bc",
+      "note": "Phase 2: FL/BC/DP not yet trained \u2014 same as ens_gan"
+    }
+  },
+  "full": {
+    "name": "full",
+    "binary": {
+      "accuracy": 0.9092839036755387,
+      "precision": 0.9090503483543261,
+      "recall": 0.9920224719101124,
+      "f1": 0.948725755323531,
+      "fpr": 0.5452674897119342,
+      "tp": 26487,
+      "fp": 2650,
+      "tn": 2210,
+      "fn": 213,
+      "config": "full",
+      "note": "Phase 2: FL/BC/DP not yet trained \u2014 same as ens_gan"
+    }
+  }
+}

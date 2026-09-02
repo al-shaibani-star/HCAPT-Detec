@@ -1,0 +1,270 @@
+{
+  "ensemble_metrics": {
+    "model": "HCAPT-Ensemble",
+    "accuracy": 0.7617991483321505,
+    "precision_weighted": 0.8203142918328575,
+    "recall_weighted": 0.7617991483321505,
+    "f1_weighted": 0.7231738106784799,
+    "fpr": 0.028009473792606324,
+    "mean_confidence": 0.9342193653263801,
+    "inference_time_per_sample_ms": 0.0069694920073509895,
+    "per_class": {
+      "Normal": {
+        "precision": 0.6627115074071473,
+        "recall": 0.9719905262073937,
+        "f1": 0.7880938465392001,
+        "support": 9711
+      },
+      "DoS": {
+        "precision": 0.96271637816245,
+        "recall": 0.7753351206434317,
+        "f1": 0.8589248589248589,
+        "support": 7460
+      },
+      "Probe": {
+        "precision": 0.8421807747489239,
+        "recall": 0.7273853779429987,
+        "f1": 0.7805851063829787,
+        "support": 2421
+      },
+      "R2L": {
+        "precision": 0.967032967032967,
+        "recall": 0.0610051993067591,
+        "f1": 0.11477013368112161,
+        "support": 2885
+      },
+      "U2R": {
+        "precision": 0.7,
+        "recall": 0.208955223880597,
+        "f1": 0.3218390804597701,
+        "support": 67
+      }
+    }
+  },
+  "per_class": [
+    {
+      "Class": "Normal",
+      "Support": 9711,
+      "Accuracy": 0.9719905262073937,
+      "Precision": 0.6627115074071473,
+      "Recall": 0.9719905262073937,
+      "F1": 0.7880938465392001,
+      "MeanConfidence": 0.9862390708697525
+    },
+    {
+      "Class": "DoS",
+      "Support": 7460,
+      "Accuracy": 0.7753351206434317,
+      "Precision": 0.96271637816245,
+      "Recall": 0.7753351206434317,
+      "F1": 0.8589248589248589,
+      "MeanConfidence": 0.9325517802788554
+    },
+    {
+      "Class": "Probe",
+      "Support": 2421,
+      "Accuracy": 0.7273853779429987,
+      "Precision": 0.8421807747489239,
+      "Recall": 0.7273853779429987,
+      "F1": 0.7805851063829787,
+      "MeanConfidence": 0.8426008155679451
+    },
+    {
+      "Class": "R2L",
+      "Support": 2885,
+      "Accuracy": 0.0610051993067591,
+      "Precision": 0.967032967032967,
+      "Recall": 0.0610051993067591,
+      "F1": 0.11477013368112161,
+      "MeanConfidence": 0.8460184955399173
+    },
+    {
+      "Class": "U2R",
+      "Support": 67,
+      "Accuracy": 0.208955223880597,
+      "Precision": 0.7,
+      "Recall": 0.208955223880597,
+      "F1": 0.3218390804597701,
+      "MeanConfidence": 0.6886199955048822
+    }
+  ],
+  "targets": {
+    "accuracy": {
+      "value": 0.7617991483321505,
+      "target": 0.97,
+      "passed": false
+    },
+    "fpr": {
+      "value": 0.028009473792606324,
+      "target": 0.015,
+      "passed": false
+    },
+    "response_time_s": {
+      "value": 1.6195573986126566e-05,
+      "target": 1.0,
+      "passed": true
+    }
+  },
+  "comparison_table": [
+    {
+      "Source": "Literature",
+      "Ref": "[3]",
+      "Model": "Jia et al. (2019) - DNN + NDNN + ReLU + Entropy",
+      "Dataset": "NSL-KDD + KDD99",
+      "Accuracy": 0.999,
+      "Precision": NaN,
+      "Recall": 0.9997,
+      "F1": 0.9998,
+      "FPR": 0.0003
+    },
+    {
+      "Source": "Literature",
+      "Ref": "[16]",
+      "Model": "Arafah et al. (2024) - BiGAN + WGAN + DL",
+      "Dataset": "CICIDS-2017 / NSL-KDD",
+      "Accuracy": 0.9962,
+      "Precision": 0.97,
+      "Recall": 0.95,
+      "F1": 0.9101,
+      "FPR": NaN
+    },
+    {
+      "Source": "Literature",
+      "Ref": "[41]",
+      "Model": "Radha & Kavitha (2025) - Fused IGAN-IDS (GAN + RT + Sparse SAE)",
+      "Dataset": "IIoT (augmented with GAN samples)",
+      "Accuracy": 0.996,
+      "Precision": 0.984,
+      "Recall": 0.995,
+      "F1": NaN,
+      "FPR": 0.04
+    },
+    {
+      "Source": "Literature",
+      "Ref": "[43]",
+      "Model": "Adnan et al. (2025) - EFL-Adam (Federated Learning + Generative AI)",
+      "Dataset": "CICIDS2018",
+      "Accuracy": 0.99,
+      "Precision": 0.98,
+      "Recall": 0.98,
+      "F1": 0.98,
+      "FPR": NaN
+    },
+    {
+      "Source": "Ours",
+      "Ref": "-",
+      "Model": "Baseline - RandomForest",
+      "Dataset": "NSL-KDD",
+      "Accuracy": 0.7384226401703335,
+      "Precision": 0.7777689571554064,
+      "Recall": 0.7384226401703335,
+      "F1": 0.6906567828891645,
+      "FPR": 0.027494593759654
+    },
+    {
+      "Source": "Ours",
+      "Ref": "-",
+      "Model": "Baseline - XGBoost",
+      "Dataset": "NSL-KDD",
+      "Accuracy": 0.7827803406671399,
+      "Precision": 0.8304484489109305,
+      "Recall": 0.7827803406671399,
+      "F1": 0.745707425382258,
+      "FPR": 0.02821542580578725
+    },
+    {
+      "Source": "Ours",
+      "Ref": "-",
+      "Model": "Baseline - IsolationForest (binary)",
+      "Dataset": "NSL-KDD",
+      "Accuracy": 0.8135202271114266,
+      "Precision": 0.9280682607401528,
+      "Recall": 0.7289020494038806,
+      "F1": 0.8165153631284916,
+      "FPR": 0.07465760477808671
+    },
+    {
+      "Source": "Ours",
+      "Ref": "-",
+      "Model": "HCAPT-Ensemble",
+      "Dataset": "NSL-KDD",
+      "Accuracy": 0.7617991483321505,
+      "Precision": 0.8203142918328575,
+      "Recall": 0.7617991483321505,
+      "F1": 0.7231738106784799,
+      "FPR": 0.028009473792606324
+    },
+    {
+      "Source": "Ours",
+      "Ref": "-",
+      "Model": "HCAPT-Ensemble + SelfLearn",
+      "Dataset": "NSL-KDD",
+      "Accuracy": 0.7533711852377573,
+      "Precision": 0.8134605894219988,
+      "Recall": 0.7533711852377573,
+      "F1": 0.7072452428539825,
+      "FPR": 0.027185665739882608
+    },
+    {
+      "Source": "Target",
+      "Ref": "-",
+      "Model": "HCAPT-Defense (design target)",
+      "Dataset": "-",
+      "Accuracy": 0.97,
+      "Precision": NaN,
+      "Recall": NaN,
+      "F1": NaN,
+      "FPR": 0.015
+    }
+  ],
+  "published_baselines": [
+    {
+      "ref": "[3]",
+      "authors": "Jia et al. (2019)",
+      "model": "DNN + NDNN + ReLU + Entropy",
+      "dataset": "NSL-KDD + KDD99",
+      "accuracy": 0.999,
+      "precision": null,
+      "recall": 0.9997,
+      "f1": 0.9998,
+      "fpr": 0.0003,
+      "note": "Reported on NSL-KDD; parameter tuning difficulty; high computational cost; lack of real-world testing"
+    },
+    {
+      "ref": "[16]",
+      "authors": "Arafah et al. (2024)",
+      "model": "BiGAN + WGAN + DL",
+      "dataset": "CICIDS-2017 / NSL-KDD",
+      "accuracy": 0.9962,
+      "precision": 0.97,
+      "recall": 0.95,
+      "f1": 0.9101,
+      "fpr": null,
+      "note": "WGAN showed highest stability; ANOVA feature selection; GAN-based improved rare/unseen attack detection"
+    },
+    {
+      "ref": "[41]",
+      "authors": "Radha & Kavitha (2025)",
+      "model": "Fused IGAN-IDS (GAN + RT + Sparse SAE)",
+      "dataset": "IIoT (augmented with GAN samples)",
+      "accuracy": 0.996,
+      "precision": 0.984,
+      "recall": 0.995,
+      "f1": null,
+      "fpr": 0.04,
+      "note": "Jaccard similarity 99.7%; not validated in live IIoT"
+    },
+    {
+      "ref": "[43]",
+      "authors": "Adnan et al. (2025)",
+      "model": "EFL-Adam (Federated Learning + Generative AI)",
+      "dataset": "CICIDS2018",
+      "accuracy": 0.99,
+      "precision": 0.98,
+      "recall": 0.98,
+      "f1": 0.98,
+      "fpr": null,
+      "note": "Strong privacy compliance (GDPR/HIPAA); outperforms RF/SVM/DL"
+    }
+  ]
+}

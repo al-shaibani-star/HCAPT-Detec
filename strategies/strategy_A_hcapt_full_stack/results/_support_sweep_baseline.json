@@ -1,0 +1,66 @@
+{
+  "source": "results/nsl-kdd/gan_comparison.json",
+  "train_support_source": "KDDTrain+ via loaders/nsl_kdd.py ATTACK_CATEGORIES",
+  "note": "the dissertation quoted KDDTest+ counts (2885, 67) as the generator training support; the generator trains on KDDTrain+ (995, 52)",
+  "classes": {
+    "Normal": {
+      "train_support": 67343,
+      "test_support": 9711,
+      "recall_control": 0.972,
+      "recall_cgan": 0.9704,
+      "recall_wgangp": 0.9717,
+      "delta_cgan_pp": -0.15,
+      "delta_wgangp_pp": -0.03
+    },
+    "DoS": {
+      "train_support": 45927,
+      "test_support": 7460,
+      "recall_control": 0.7753,
+      "recall_cgan": 0.8354,
+      "recall_wgangp": 0.8044,
+      "delta_cgan_pp": 6.01,
+      "delta_wgangp_pp": 2.91
+    },
+    "Probe": {
+      "train_support": 11656,
+      "test_support": 2421,
+      "recall_control": 0.7274,
+      "recall_cgan": 0.6993,
+      "recall_wgangp": 0.7005,
+      "delta_cgan_pp": -2.81,
+      "delta_wgangp_pp": -2.68
+    },
+    "R2L": {
+      "train_support": 995,
+      "test_support": 2885,
+      "recall_control": 0.061,
+      "recall_cgan": 0.0326,
+      "recall_wgangp": 0.0392,
+      "delta_cgan_pp": -2.84,
+      "delta_wgangp_pp": -2.18
+    },
+    "U2R": {
+      "train_support": 52,
+      "test_support": 67,
+      "recall_control": 0.209,
+      "recall_cgan": 0.0299,
+      "recall_wgangp": 0.0597,
+      "delta_cgan_pp": -17.91,
+      "delta_wgangp_pp": -14.93
+    }
+  },
+  "aggregate": {
+    "non_gan": {
+      "accuracy": 0.7618,
+      "fpr": 0.028
+    },
+    "cgan": {
+      "accuracy": 0.7738,
+      "fpr": 0.0296
+    },
+    "wgangp": {
+      "accuracy": 0.7652,
+      "fpr": 0.0283
+    }
+  }
+}

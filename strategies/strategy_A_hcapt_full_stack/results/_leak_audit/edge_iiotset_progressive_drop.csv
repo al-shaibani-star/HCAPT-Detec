@@ -1,0 +1,8 @@
+iteration,n_features,f1,accuracy,next_drop,next_drop_mi
+0,34,1.0,1.0,dns.qry.name.len,0.4388
+1,33,1.0,1.0,mqtt.conack.flags,0.4383
+2,32,0.9997,0.9994,tcp.dstport,0.3479
+3,31,0.9938,0.9894,tcp.srcport,0.321
+4,30,0.9859,0.9758,tcp.seq,0.2384
+5,29,0.9816,0.9686,tcp.ack,0.2238
+6,28,0.9487,0.9099,tcp.len,0.1188

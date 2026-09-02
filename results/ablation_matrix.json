@@ -1,0 +1,396 @@
+[
+  {
+    "name": "Ens (no GAN)",
+    "binary": {
+      "accuracy": 0.7748403122782115,
+      "precision": 0.9672328635104205,
+      "recall": 0.6256526143536196,
+      "f1": 0.7598183022617583,
+      "fpr": 0.028009473792606324,
+      "tp": 8029,
+      "fp": 272,
+      "tn": 9439,
+      "fn": 4804
+    },
+    "multiclass": {
+      "accuracy": 0.7617991483321505,
+      "precision_weighted": 0.8203142918328575,
+      "recall_weighted": 0.7617991483321505,
+      "f1_weighted": 0.7231738106784799,
+      "per_class": {
+        "Normal": {
+          "precision": 0.6627115074071473,
+          "recall": 0.9719905262073937,
+          "f1": 0.7880938465392001,
+          "support": 9711
+        },
+        "DoS": {
+          "precision": 0.96271637816245,
+          "recall": 0.7753351206434317,
+          "f1": 0.8589248589248589,
+          "support": 7460
+        },
+        "Probe": {
+          "precision": 0.8421807747489239,
+          "recall": 0.7273853779429987,
+          "f1": 0.7805851063829787,
+          "support": 2421
+        },
+        "R2L": {
+          "precision": 0.967032967032967,
+          "recall": 0.0610051993067591,
+          "f1": 0.11477013368112161,
+          "support": 2885
+        },
+        "U2R": {
+          "precision": 0.7,
+          "recall": 0.208955223880597,
+          "f1": 0.3218390804597701,
+          "support": 67
+        }
+      }
+    },
+    "timing_ms_per_sample": {
+      "ensemble": 0.02801544155272463,
+      "blockchain": 0.0,
+      "zero_trust": 0.0,
+      "total": 0.02801544155272463
+    },
+    "bc_stats": null,
+    "zt_stats": null
+  },
+  {
+    "name": "Ens + GAN (central)",
+    "binary": {
+      "accuracy": 0.7880589070262598,
+      "precision": 0.9667400625796732,
+      "recall": 0.6500428582560586,
+      "f1": 0.7773739632839436,
+      "fpr": 0.02955411389146329,
+      "tp": 8342,
+      "fp": 287,
+      "tn": 9424,
+      "fn": 4491
+    },
+    "multiclass": {
+      "accuracy": 0.7738200851667849,
+      "precision_weighted": 0.8218564089632172,
+      "recall_weighted": 0.7738200851667849,
+      "f1_weighted": 0.7291585751486774,
+      "per_class": {
+        "Normal": {
+          "precision": 0.6772547610492274,
+          "recall": 0.9704458861085367,
+          "f1": 0.7977651739608905,
+          "support": 9711
+        },
+        "DoS": {
+          "precision": 0.9623224212476837,
+          "recall": 0.8353887399463807,
+          "f1": 0.894374282433984,
+          "support": 7460
+        },
+        "Probe": {
+          "precision": 0.8258536585365853,
+          "recall": 0.6992978108219744,
+          "f1": 0.7573249832252292,
+          "support": 2421
+        },
+        "R2L": {
+          "precision": 0.9494949494949495,
+          "recall": 0.032582322357019064,
+          "f1": 0.06300268096514745,
+          "support": 2885
+        },
+        "U2R": {
+          "precision": 0.5,
+          "recall": 0.029850746268656716,
+          "f1": 0.056338028169014086,
+          "support": 67
+        }
+      }
+    },
+    "timing_ms_per_sample": {
+      "ensemble": 0.012882461016528398,
+      "blockchain": 0.0,
+      "zero_trust": 0.0,
+      "total": 0.012882461016528398
+    },
+    "bc_stats": null,
+    "zt_stats": null
+  },
+  {
+    "name": "Ens + GAN + ZT (central)",
+    "binary": {
+      "accuracy": 0.7903655074520937,
+      "precision": 0.9667242371905584,
+      "recall": 0.6542507597599938,
+      "f1": 0.780369922855284,
+      "fpr": 0.02976006590464422,
+      "tp": 8396,
+      "fp": 289,
+      "tn": 9422,
+      "fn": 4437
+    },
+    "multiclass": {
+      "accuracy": 0.774485450674237,
+      "precision_weighted": 0.8211042138277178,
+      "recall_weighted": 0.774485450674237,
+      "f1_weighted": 0.7295215288378719,
+      "per_class": {
+        "Normal": {
+          "precision": 0.6798470308103037,
+          "recall": 0.9702399340953558,
+          "f1": 0.7994908782350445,
+          "support": 9711
+        },
+        "DoS": {
+          "precision": 0.9566748315982854,
+          "recall": 0.8376675603217159,
+          "f1": 0.8932246998284734,
+          "support": 7460
+        },
+        "Probe": {
+          "precision": 0.8258536585365853,
+          "recall": 0.6992978108219744,
+          "f1": 0.7573249832252292,
+          "support": 2421
+        },
+        "R2L": {
+          "precision": 0.9494949494949495,
+          "recall": 0.032582322357019064,
+          "f1": 0.06300268096514745,
+          "support": 2885
+        },
+        "U2R": {
+          "precision": 0.5,
+          "recall": 0.029850746268656716,
+          "f1": 0.056338028169014086,
+          "support": 67
+        }
+      }
+    },
+    "timing_ms_per_sample": {
+      "ensemble": 0.01388727941777031,
+      "blockchain": 0.0,
+      "zero_trust": 0.07759432279953643,
+      "total": 0.09148160221730672
+    },
+    "bc_stats": null,
+    "zt_stats": {
+      "action_counts": {
+        "BLOCK": 6889,
+        "ALLOW": 12614,
+        "CHALLENGE": 56,
+        "MONITOR": 2168,
+        "QUARANTINE": 817
+      }
+    }
+  },
+  {
+    "name": "Ens + GAN + FL",
+    "binary": {
+      "accuracy": 0.7755943931866572,
+      "precision": 0.9666266506602641,
+      "recall": 0.6274448686978883,
+      "f1": 0.7609507158720408,
+      "fpr": 0.02862732983214911,
+      "tp": 8052,
+      "fp": 278,
+      "tn": 9433,
+      "fn": 4781
+    },
+    "multiclass": {
+      "accuracy": 0.7651703335699077,
+      "precision_weighted": 0.8256716490598558,
+      "recall_weighted": 0.7651703335699077,
+      "f1_weighted": 0.721967628164881,
+      "per_class": {
+        "Normal": {
+          "precision": 0.6636414802307584,
+          "recall": 0.9713726701678509,
+          "f1": 0.7885475444096134,
+          "support": 9711
+        },
+        "DoS": {
+          "precision": 0.9624780456650167,
+          "recall": 0.8080428954423593,
+          "f1": 0.8785251038402682,
+          "support": 7460
+        },
+        "Probe": {
+          "precision": 0.8595505617977528,
+          "recall": 0.6951672862453532,
+          "f1": 0.7686686458095455,
+          "support": 2421
+        },
+        "R2L": {
+          "precision": 0.99,
+          "recall": 0.03431542461005199,
+          "f1": 0.06633165829145729,
+          "support": 2885
+        },
+        "U2R": {
+          "precision": 0.7777777777777778,
+          "recall": 0.1044776119402985,
+          "f1": 0.18421052631578946,
+          "support": 67
+        }
+      }
+    },
+    "timing_ms_per_sample": {
+      "ensemble": 0.012736389449168977,
+      "blockchain": 0.0,
+      "zero_trust": 0.0,
+      "total": 0.012736389449168977
+    },
+    "bc_stats": null,
+    "zt_stats": null
+  },
+  {
+    "name": "Ens + GAN + FL + BC",
+    "binary": {
+      "accuracy": 0.7755943931866572,
+      "precision": 0.9666266506602641,
+      "recall": 0.6274448686978883,
+      "f1": 0.7609507158720408,
+      "fpr": 0.02862732983214911,
+      "tp": 8052,
+      "fp": 278,
+      "tn": 9433,
+      "fn": 4781
+    },
+    "multiclass": {
+      "accuracy": 0.7651703335699077,
+      "precision_weighted": 0.8256716490598558,
+      "recall_weighted": 0.7651703335699077,
+      "f1_weighted": 0.721967628164881,
+      "per_class": {
+        "Normal": {
+          "precision": 0.6636414802307584,
+          "recall": 0.9713726701678509,
+          "f1": 0.7885475444096134,
+          "support": 9711
+        },
+        "DoS": {
+          "precision": 0.9624780456650167,
+          "recall": 0.8080428954423593,
+          "f1": 0.8785251038402682,
+          "support": 7460
+        },
+        "Probe": {
+          "precision": 0.8595505617977528,
+          "recall": 0.6951672862453532,
+          "f1": 0.7686686458095455,
+          "support": 2421
+        },
+        "R2L": {
+          "precision": 0.99,
+          "recall": 0.03431542461005199,
+          "f1": 0.06633165829145729,
+          "support": 2885
+        },
+        "U2R": {
+          "precision": 0.7777777777777778,
+          "recall": 0.1044776119402985,
+          "f1": 0.18421052631578946,
+          "support": 67
+        }
+      }
+    },
+    "timing_ms_per_sample": {
+      "ensemble": 0.01461780646576621,
+      "blockchain": 0.01058362112390479,
+      "zero_trust": 0.0,
+      "total": 0.025201427589670998
+    },
+    "bc_stats": {
+      "queries": 22544,
+      "matches": 3,
+      "match_rate": 0.00013307310149041873,
+      "overrides": 0,
+      "boosts": 3,
+      "similarity_threshold": 0.85,
+      "blockchain_size": 30,
+      "blockchain_iocs": 420
+    },
+    "zt_stats": null
+  },
+  {
+    "name": "FULL: Ens + GAN + FL + BC + ZT",
+    "binary": {
+      "accuracy": 0.7791873669268985,
+      "precision": 0.9668370379175086,
+      "recall": 0.6338346450557157,
+      "f1": 0.765697072390097,
+      "fpr": 0.028730305838739572,
+      "tp": 8134,
+      "fp": 279,
+      "tn": 9432,
+      "fn": 4699
+    },
+    "multiclass": {
+      "accuracy": 0.7680535841022001,
+      "precision_weighted": 0.8265961865685899,
+      "recall_weighted": 0.7680535841022001,
+      "f1_weighted": 0.7245300945776011,
+      "per_class": {
+        "Normal": {
+          "precision": 0.6674686858679499,
+          "recall": 0.9712696941612604,
+          "f1": 0.7912087912087912,
+          "support": 9711
+        },
+        "DoS": {
+          "precision": 0.9602899464229436,
+          "recall": 0.8168900804289544,
+          "f1": 0.882804577719832,
+          "support": 7460
+        },
+        "Probe": {
+          "precision": 0.8595505617977528,
+          "recall": 0.6951672862453532,
+          "f1": 0.7686686458095455,
+          "support": 2421
+        },
+        "R2L": {
+          "precision": 0.99,
+          "recall": 0.03431542461005199,
+          "f1": 0.06633165829145729,
+          "support": 2885
+        },
+        "U2R": {
+          "precision": 0.7777777777777778,
+          "recall": 0.1044776119402985,
+          "f1": 0.18421052631578946,
+          "support": 67
+        }
+      }
+    },
+    "timing_ms_per_sample": {
+      "ensemble": 0.017197685008187764,
+      "blockchain": 0.01317394845785191,
+      "zero_trust": 0.016838735177044838,
+      "total": 0.04721036864308451
+    },
+    "bc_stats": {
+      "queries": 22544,
+      "matches": 3,
+      "match_rate": 0.00013307310149041873,
+      "overrides": 0,
+      "boosts": 3,
+      "similarity_threshold": 0.85,
+      "blockchain_size": 30,
+      "blockchain_iocs": 420
+    },
+    "zt_stats": {
+      "action_counts": {
+        "BLOCK": 6800,
+        "ALLOW": 12504,
+        "CHALLENGE": 83,
+        "QUARANTINE": 648,
+        "MONITOR": 2509
+      }
+    }
+  }
+]

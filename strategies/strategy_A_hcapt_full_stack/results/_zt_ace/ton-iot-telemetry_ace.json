@@ -1,0 +1,27 @@
+{
+  "ace": 0.8997491574754902,
+  "n_samples": 52224,
+  "breakdown": {
+    "allow": {
+      "total": 5559,
+      "correct": 5375
+    },
+    "monitor": {
+      "total": 6203,
+      "correct": 6203
+    },
+    "challenge": {
+      "total": 8990,
+      "correct": 8984
+    },
+    "quarantine": {
+      "total": 29369,
+      "correct": 24324.5
+    },
+    "block": {
+      "total": 2103,
+      "correct": 2102
+    }
+  },
+  "dataset": "ton-iot-telemetry"
+}

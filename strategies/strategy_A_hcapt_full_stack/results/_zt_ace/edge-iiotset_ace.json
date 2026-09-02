@@ -1,0 +1,27 @@
+{
+  "ace": 0.9519961977186312,
+  "n_samples": 31560,
+  "breakdown": {
+    "allow": {
+      "total": 1359,
+      "correct": 1270
+    },
+    "monitor": {
+      "total": 1214,
+      "correct": 1214
+    },
+    "challenge": {
+      "total": 20259,
+      "correct": 19973
+    },
+    "quarantine": {
+      "total": 8723,
+      "correct": 7583.0
+    },
+    "block": {
+      "total": 5,
+      "correct": 5
+    }
+  },
+  "dataset": "edge-iiotset"
+}

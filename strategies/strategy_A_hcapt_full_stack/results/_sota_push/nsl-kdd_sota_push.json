@@ -1,0 +1,30 @@
+{
+  "dataset": "nsl-kdd",
+  "n_trials": 30,
+  "best_val_f1": 0.9994028322811807,
+  "best_params": {
+    "rf_n": 800,
+    "rf_d": 20,
+    "xgb_n": 300,
+    "xgb_d": 4,
+    "xgb_lr": 0.17009266858114902,
+    "cat_n": 300,
+    "cat_d": 9,
+    "cat_lr": 0.05281977685336191,
+    "dnn_topo": "512_256_128",
+    "dnn_dropout": 0.0859701815646158,
+    "dnn_lr": 0.0021406885425759594,
+    "dnn_epochs": 18
+  },
+  "test_acc": 0.8016767210787793,
+  "test_f1": 0.7946161973448482,
+  "test_fpr": 0.02955411389146329,
+  "optuna_time_s": 520.8,
+  "final_train_time_s": 15.5,
+  "models_in_ensemble": [
+    "RF",
+    "XGB",
+    "CatBoost",
+    "DNN"
+  ]
+}

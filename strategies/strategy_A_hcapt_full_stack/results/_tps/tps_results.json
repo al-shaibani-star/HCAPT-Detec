@@ -1,0 +1,62 @@
+{
+  "framework": "HCAPT-Defense PoA blockchain",
+  "scenarios": [
+    {
+      "n_authorities": 5,
+      "batch_size": 50,
+      "n_rounds": 200,
+      "finalized_txs": 10000,
+      "total_wall_s": 2.101,
+      "tps": 4759.1,
+      "block_time_p50_ms": 10.51,
+      "block_time_p99_ms": 11.34,
+      "sig_overhead_us": 50.0,
+      "label": "batch=50  (small IoC packets)"
+    },
+    {
+      "n_authorities": 5,
+      "batch_size": 200,
+      "n_rounds": 200,
+      "finalized_txs": 40000,
+      "total_wall_s": 8.191,
+      "tps": 4883.4,
+      "block_time_p50_ms": 40.95,
+      "block_time_p99_ms": 41.66,
+      "sig_overhead_us": 50.0,
+      "label": "batch=200 (medium IoC bursts)"
+    },
+    {
+      "n_authorities": 5,
+      "batch_size": 500,
+      "n_rounds": 100,
+      "finalized_txs": 50000,
+      "total_wall_s": 10.183,
+      "tps": 4910.1,
+      "block_time_p50_ms": 101.76,
+      "block_time_p99_ms": 107.71,
+      "sig_overhead_us": 50.0,
+      "label": "batch=500 (large daily flush)"
+    },
+    {
+      "n_authorities": 5,
+      "batch_size": 1000,
+      "n_rounds": 50,
+      "finalized_txs": 50000,
+      "total_wall_s": 10.148,
+      "tps": 4927.2,
+      "block_time_p50_ms": 203.06,
+      "block_time_p99_ms": 205.93,
+      "sig_overhead_us": 50.0,
+      "label": "batch=1000 (maximum batch)"
+    }
+  ],
+  "best_tps": 4927.2,
+  "reference_TPS": {
+    "Bitcoin": 7,
+    "Ethereum (PoS)": 15,
+    "Visa (target)": 1700,
+    "Hyperledger Fabric": 3500,
+    "Solana (peak)": 65000
+  },
+  "operational_note": "Realistic IoC-sharing load is far below saturation; the framework is throughput-bounded only at >500 IoCs/s sustained."
+}
