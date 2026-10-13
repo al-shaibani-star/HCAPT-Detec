@@ -1,0 +1,10 @@
+_day,_file,Data Exfiltration,Establish Foothold,Lateral Movement,Normal,Reconnaissance
+Fri,enp0s3-tcpdump-friday.pcap_Flow.csv,9,12,0,7340,0
+Fri,enp0s3-tcpdump-pvt-friday.pcap_Flow.csv,6,0,0,2612,0
+Mon,enp0s3-monday-pvt.pcap_Flow.csv,0,0,0,3404,0
+Mon,enp0s3-monday.pcap_Flow.csv,0,0,0,8728,0
+Thu,enp0s3-public-thursday.pcap_Flow.csv,0,0,137,9548,0
+Tue,enp0s3-public-tuesday.pcap_Flow.csv,0,0,0,17377,11865
+Tue,enp0s3-pvt-tuesday.pcap_Flow.csv,0,0,0,2615,0
+Wed,enp0s3-public-wednesday.pcap_Flow.csv,0,8588,0,8855,44
+Wed,enp0s3-pvt-wednesday.pcap_Flow.csv,0,4,0,1433,0

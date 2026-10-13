@@ -1,0 +1,43 @@
+{
+  "written_utc": "2026-10-09T06:58:59+00:00",
+  "status": "frozen before any UNSW-NB15 model was trained",
+  "configurations": [
+    "lr",
+    "xgb",
+    "dnn",
+    "ens_cw",
+    "ens_smote",
+    "ens_cgan",
+    "ens_wgan",
+    "ens_hyb"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "zero_trust": {
+    "high_conf": 0.85,
+    "high_risk": 0.7,
+    "mid_conf": 0.55,
+    "mid_risk": 0.4,
+    "validator": "LightGBM on odd-indexed features, trained on FIT"
+  },
+  "primary_metrics": [
+    "test macro-F1 (10 classes)",
+    "test binary accuracy / F1 / FPR"
+  ],
+  "hypotheses": {
+    "H1": "No GAN-based ensemble (ens_cgan, ens_wgan, ens_hyb) has a higher mean test macro-F1 than BOTH ens_cw and ens_smote.",
+    "H2": "ens_hyb + Zero-Trust is not significantly more often correct than ens_smote (exact McNemar on binary correctness, Holm over the comparison family) in a majority of seeds.",
+    "H3": "Zero-Trust recovers fewer than 10% of eligible high-confidence benign errors (attacks labelled Normal with confidence >= 0.85).",
+    "H4": "The binary-error correlation (phi) between the validator and ens_hyb exceeds 0.5 on the test partition."
+  },
+  "data_sha256": {
+    "UNSW_NB15_testing-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "UNSW_NB15_training-set.csv": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+  },
+  "script_sha256": "32dae376644d49e0ed44692e081d2155bc7748f8a24a766664373c4ee7576511"
+}

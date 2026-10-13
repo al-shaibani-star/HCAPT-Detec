@@ -1,0 +1,308 @@
+{
+  "DoS": {
+    "cgan_vs_smote_recall_val": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        0.0019,
+        -0.0164,
+        -0.0144,
+        -0.0015,
+        -0.0008,
+        -0.0006,
+        -0.0001,
+        -0.0001
+      ],
+      "n_star": null,
+      "n_star_ci95": [
+        1815.038310634234,
+        3999.9999999999995
+      ],
+      "share_of_bootstraps_with_crossover": 0.011
+    },
+    "cgan_vs_smote_recall_test": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0397,
+        -0.0594,
+        -0.0275,
+        -0.0081,
+        -0.0232,
+        -0.0121,
+        -0.0167,
+        -0.014
+      ],
+      "n_star": null,
+      "n_star_ci95": null,
+      "share_of_bootstraps_with_crossover": 0.0055
+    },
+    "wgan_vs_smote_recall_val": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0051,
+        -0.0213,
+        -0.0155,
+        -0.0054,
+        -0.0014,
+        -0.0014,
+        -0.0002,
+        -0.0004
+      ],
+      "n_star": null,
+      "n_star_ci95": null,
+      "share_of_bootstraps_with_crossover": 0.0095
+    },
+    "wgan_vs_smote_recall_test": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0043,
+        -0.055,
+        -0.0162,
+        -0.0069,
+        -0.0117,
+        -0.0146,
+        -0.0143,
+        -0.0225
+      ],
+      "n_star": null,
+      "n_star_ci95": null,
+      "share_of_bootstraps_with_crossover": 0.0
+    }
+  },
+  "Probe": {
+    "cgan_vs_smote_recall_val": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0813,
+        -0.053,
+        -0.0206,
+        -0.0129,
+        -0.007,
+        -0.0023,
+        -0.003,
+        -0.0001
+      ],
+      "n_star": null,
+      "n_star_ci95": [
+        3680.750602499475,
+        3999.9999999999995
+      ],
+      "share_of_bootstraps_with_crossover": 0.4315
+    },
+    "cgan_vs_smote_recall_test": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0679,
+        -0.0342,
+        -0.0026,
+        -0.0027,
+        -0.0204,
+        -0.0349,
+        0.0247,
+        0.0124
+      ],
+      "n_star": 1500.9465228643778,
+      "n_star_ci95": [
+        958.503772879581,
+        1730.595742465115
+      ],
+      "share_of_bootstraps_with_crossover": 0.753
+    },
+    "wgan_vs_smote_recall_val": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0599,
+        -0.0565,
+        -0.0139,
+        -0.0086,
+        -0.0042,
+        0.0001,
+        -0.0009,
+        0.0009
+      ],
+      "n_star": 2828.4271247462025,
+      "n_star_ci95": [
+        813.4511746992612,
+        3769.27149596754
+      ],
+      "share_of_bootstraps_with_crossover": 0.9945
+    },
+    "wgan_vs_smote_recall_test": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "mean_delta": [
+        -0.0562,
+        -0.0339,
+        -0.0006,
+        0.0106,
+        -0.0064,
+        -0.0193,
+        0.0552,
+        0.0963
+      ],
+      "n_star": 1197.0002912606885,
+      "n_star_ci95": [
+        80.04588160971021,
+        1534.953952648845
+      ],
+      "share_of_bootstraps_with_crossover": 1.0
+    }
+  },
+  "R2L": {
+    "cgan_vs_smote_recall_val": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "mean_delta": [
+        -0.1136,
+        -0.0623,
+        -0.0362,
+        -0.0111,
+        -0.001
+      ],
+      "n_star": null,
+      "n_star_ci95": [
+        249.9999999999999,
+        499.99999999999983
+      ],
+      "share_of_bootstraps_with_crossover": 0.2
+    },
+    "cgan_vs_smote_recall_test": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "mean_delta": [
+        -0.0131,
+        -0.0349,
+        -0.0359,
+        -0.0429,
+        -0.038
+      ],
+      "n_star": null,
+      "n_star_ci95": null,
+      "share_of_bootstraps_with_crossover": 0.0
+    },
+    "wgan_vs_smote_recall_val": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "mean_delta": [
+        -0.1377,
+        -0.0854,
+        -0.0392,
+        -0.007,
+        0.0
+      ],
+      "n_star": 499.99999999999983,
+      "n_star_ci95": [
+        314.98026247371723,
+        499.99999999999983
+      ],
+      "share_of_bootstraps_with_crossover": 0.519
+    },
+    "wgan_vs_smote_recall_test": {
+      "levels": [
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "mean_delta": [
+        -0.0139,
+        -0.022,
+        -0.015,
+        -0.0141,
+        -0.0056
+      ],
+      "n_star": null,
+      "n_star_ci95": [
+        314.4889170925793,
+        492.323520872599
+      ],
+      "share_of_bootstraps_with_crossover": 0.152
+    }
+  }
+}

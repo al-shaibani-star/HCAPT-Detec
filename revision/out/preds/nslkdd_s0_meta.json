@@ -1,0 +1,151 @@
+{
+  "seed": 0,
+  "configs": {
+    "none": {
+      "class_handling": {},
+      "train_counts": [
+        53874,
+        36741,
+        9325,
+        796,
+        42
+      ],
+      "n_synthetic": 0,
+      "learner_val_acc": {
+        "rf_acc": 0.998809287557055,
+        "xgb_acc": 0.9992061917047033,
+        "nn_acc": 0.9752331811867434,
+        "weights": [
+          0.35791668166232715,
+          0.35934009073317574,
+          0.2827432276044971
+        ]
+      },
+      "train_s": 37.55903673171997
+    },
+    "smote": {
+      "class_handling": {
+        "DoS": "smote",
+        "Probe": "smote",
+        "R2L": "smote",
+        "U2R": "smote"
+      },
+      "train_counts": [
+        53874,
+        53874,
+        53874,
+        53874,
+        53874
+      ],
+      "n_synthetic": 168592,
+      "learner_val_acc": {
+        "rf_acc": 0.9989283588013494,
+        "xgb_acc": 0.9994046437785274,
+        "nn_acc": 0.9924985116094464,
+        "weights": [
+          0.33984715159214973,
+          0.3414696533193732,
+          0.3186831950884771
+        ]
+      },
+      "train_s": 100.13307452201843
+    },
+    "cgan": {
+      "class_handling": {
+        "DoS": "cgan",
+        "Probe": "cgan",
+        "R2L": "cgan",
+        "U2R": "cgan"
+      },
+      "train_counts": [
+        53874,
+        53874,
+        53874,
+        53874,
+        53874
+      ],
+      "n_synthetic": 168592,
+      "learner_val_acc": {
+        "rf_acc": 0.9988489779718198,
+        "xgb_acc": 0.9993649533637626,
+        "nn_acc": 0.9963087914268705,
+        "weights": [
+          0.33556020753538696,
+          0.33729609014376033,
+          0.3271437023208527
+        ]
+      },
+      "train_s": 99.5040807723999
+    },
+    "wgan": {
+      "class_handling": {
+        "DoS": "wgan",
+        "Probe": "wgan",
+        "R2L": "wgan",
+        "U2R": "wgan"
+      },
+      "train_counts": [
+        53874,
+        53874,
+        53874,
+        53874,
+        53874
+      ],
+      "n_synthetic": 168592,
+      "learner_val_acc": {
+        "rf_acc": 0.9988886683865846,
+        "xgb_acc": 0.999285572534233,
+        "nn_acc": 0.9956737447906331,
+        "weights": [
+          0.3364353813308154,
+          0.3377733608050237,
+          0.32579125786416085
+        ]
+      },
+      "train_s": 115.41090393066406
+    },
+    "hybrid": {
+      "class_handling": {
+        "DoS": "wgan",
+        "Probe": "wgan",
+        "R2L": "smote",
+        "U2R": "smote"
+      },
+      "train_counts": [
+        53874,
+        53874,
+        53874,
+        53874,
+        53874
+      ],
+      "n_synthetic": 168592,
+      "learner_val_acc": {
+        "rf_acc": 0.9986902163127604,
+        "xgb_acc": 0.9991665012899384,
+        "nn_acc": 0.9925382020242112,
+        "weights": [
+          0.3395460971573577,
+          0.341167161587437,
+          0.3192867412552054
+        ]
+      },
+      "train_s": 96.54790019989014,
+      "ensemble_latency": {
+        "single_sample_median_ms": 38.790499998867745,
+        "single_sample_p95_ms": 44.97214999901189,
+        "batch_ms_per_sample": 0.005030943931767842,
+        "batch_size": 22544,
+        "n_single": 500
+      }
+    }
+  },
+  "risk_latency": {
+    "single_sample_median_ms": 0.43369999997366904,
+    "single_sample_p95_ms": 0.5262249999816502,
+    "batch_ms_per_sample": 0.0009890613910580894,
+    "batch_size": 22544,
+    "n_single": 500
+  },
+  "cgan_train_s": 444.7416262626648,
+  "wgan_train_s": 536.583694934845
+}

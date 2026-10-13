@@ -1,0 +1,20 @@
+# smoke tests, temporary models, logs, snapshots
+out/*smoke*
+out/**/*smoke*
+out/models_tmp/
+out/tuning/generators/
+out/tables_shipped/
+out/*.log
+out/*.err
+__pycache__/
+_*.py
+*.bak.py
+# authoring tools: they contain the unpublished manuscript text and the response to the
+# reviewers; they are not needed to reproduce any result (shared through the review channel)
+r12_build_manuscript.py
+r12_flow_edits.py
+r13_build_response.py
+r18_flow_report.py
+# per-sample predictions (*.npz, ~410 MB) are excluded by the repository .gitignore and are
+# distributed in HCAPT-revision-artifact.zip together with MANIFEST.sha256
+out/tables/_archive_uncapped_rf/

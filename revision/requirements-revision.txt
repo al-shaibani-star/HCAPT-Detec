@@ -1,0 +1,19 @@
+# Versions used for every result in the revised manuscript (Python 3.12.10, Windows 11).
+# torch: install the CUDA build that matches your GPU, e.g.
+#   pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.7.0
+numpy==2.4.3
+pandas==2.2.3
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.2.0
+lightgbm==4.6.0
+imbalanced-learn==0.14.1
+optuna==4.8.0
+ctgan==0.12.1
+matplotlib==3.10.8
+tqdm
+joblib
+psutil==7.2.2
+# authoring tools only (manuscript / response letter builders)
+python-docx==1.2.0

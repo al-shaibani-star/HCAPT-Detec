@@ -1,0 +1,8 @@
+device,rows,features,normal_days,attack_days,time_overlap,distinct_vectors,label_conflict_rows,duplicate_rows,format_only_accuracy,majority_rate
+fridge,39944,"fridge_temperature, temp_condition",31 Mar–02 Apr,25 Apr–29 Apr,False,151,1.0,0.9924394151812538,0.6244742630280381,0.6244742639695574
+garage_door,39587,"door_state, sphone_signal",31 Mar–02 Apr,23 Apr–28 Apr,False,4,0.0,0.9998989567282188,1.0,0.621087730820724
+gps_tracker,38960,"latitude, longitude",31 Mar–01 Apr,23 Apr–28 Apr,False,38657,0.0078028747433264885,0.0077515400410677615,0.6149897330595483,0.6149897330595483
+modbus,31106,"FC1_Read_Input_Register, FC2_Read_Discrete_Value, FC3_Read_Holding_Register, FC4_Read_Coil",31 Mar–31 Mar,23 Apr–28 Apr,False,8865,0.0,0.7150067511091108,0.5177779186650746,0.5177779206583939
+motion_light,39488,"motion_status, light_status",31 Mar–02 Apr,25 Apr–28 Apr,False,2,1.0,0.9998987034035657,0.6201377619094512,0.6201377633711507
+thermostat,32774,"current_temperature, thermostat_status",31 Mar–02 Apr,23 Apr–28 Apr,False,30963,0.055287728077134314,0.055196192103496675,0.5423201301072799,0.542320131811802
+weather,39260,"temperature, pressure, humidity",31 Mar–31 Mar,23 Apr–28 Apr,False,37988,0.0,0.03239938869077942,0.6179317371370352,0.6179317371370352

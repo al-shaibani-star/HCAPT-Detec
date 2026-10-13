@@ -1,0 +1,11 @@
+seed,base,challenges,challenge_precision,eligible,recovery_recall
+0,ens_cw,0,0.0,0,
+0,ens_hyb,0,0.0,0,
+1,ens_cw,0,0.0,0,
+1,ens_hyb,0,0.0,0,
+2,ens_cw,0,0.0,0,
+2,ens_hyb,0,0.0,0,
+3,ens_cw,0,0.0,0,
+3,ens_hyb,0,0.0,2,0.0
+4,ens_cw,0,0.0,0,
+4,ens_hyb,0,0.0,1,0.0

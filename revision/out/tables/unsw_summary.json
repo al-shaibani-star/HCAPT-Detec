@@ -1,0 +1,65 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "hypotheses": {
+    "H1": "No GAN-based ensemble (ens_cgan, ens_wgan, ens_hyb) has a higher mean test macro-F1 than BOTH ens_cw and ens_smote.",
+    "H2": "ens_hyb + Zero-Trust is not significantly more often correct than ens_smote (exact McNemar on binary correctness, Holm over the comparison family) in a majority of seeds.",
+    "H3": "Zero-Trust recovers fewer than 10% of eligible high-confidence benign errors (attacks labelled Normal with confidence >= 0.85).",
+    "H4": "The binary-error correlation (phi) between the validator and ens_hyb exceeds 0.5 on the test partition."
+  },
+  "supported": {
+    "H1": true,
+    "H2": false,
+    "H3": true,
+    "H4": true
+  },
+  "phi_mean": 0.6931069257131213,
+  "test_rows": 82332,
+  "deduplicated_test_rows": 73791,
+  "zt": {
+    "ens_cw": {
+      "challenges": 0.0,
+      "challenge_precision": 0.0,
+      "eligible": 0.0,
+      "recovery_recall": NaN
+    },
+    "ens_hyb": {
+      "challenges": 0.0,
+      "challenge_precision": 0.0,
+      "eligible": 0.6,
+      "recovery_recall": 0.0
+    }
+  },
+  "mcnemar": {
+    "dnn": {
+      "proposed_right": 6536.0,
+      "comparator_right": 827.2,
+      "p_holm_max": 0.0
+    },
+    "ens_cw": {
+      "proposed_right": 4239.0,
+      "comparator_right": 587.6,
+      "p_holm_max": 0.0
+    },
+    "ens_hyb": {
+      "proposed_right": 0.0,
+      "comparator_right": 0.0,
+      "p_holm_max": 1.0
+    },
+    "ens_smote": {
+      "proposed_right": 3986.8,
+      "comparator_right": 597.2,
+      "p_holm_max": 0.0
+    },
+    "lr": {
+      "proposed_right": 6704.0,
+      "comparator_right": 827.0,
+      "p_holm_max": 0.0
+    }
+  }
+}
