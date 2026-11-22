@@ -1,4 +1,4 @@
-# Reproducibility package — IJIES 20266447 (revised)
+# Reproducibility package — IJIES 20267615 (first submitted as 20266447)
 
 **When Does Generative Augmentation Help APT Detection under Distribution Shift?
 A Leakage-Safe Re-Evaluation of a Calibration-Aware Zero-Trust Pipeline**
@@ -67,20 +67,22 @@ only failures we met).
 | Script | What it does | Manuscript |
 |---|---|---|
 | `rev_common.py` | frozen FIT/VAL split, FIT-only preprocessing, metrics | §3.3, Alg. 1, Table 3 |
-| `r01_train_nslkdd.py` | 5 imbalance treatments × 5 seeds, Zero-Trust validator | Tables 7–9, 11 |
-| `r02_tables_nslkdd.py` | ablation, per-class recall, Zero-Trust outcome, McNemar | Tables 7–9, 11, Fig. 8 |
-| `r03_baselines_nslkdd.py` | 9 common-protocol baselines (single learners, ROS, B-SMOTE, ADASYN, CTGAN) | Tables 7–9 |
-| `r04_learning_curve.py`, `r05_…analysis.py` | controlled learning curve, C2ST/coverage, changeover CI | Figs. 4–5, Table 10, Alg. 3 |
-| `r06_calibration_nslkdd.py` | calibration, thresholds and validator at matched budgets | Tables 12–13, Figs. 6–7 |
-| `r07_validator_independence.py` | feature lists, error dependence (φ, Yule's Q) | Table 13, Table A1 |
-| `r08_dapt_stages.py` | DAPT 2020 random / Flow-ID-grouped / leave-one-day-out | Tables 5, 14–15, Fig. 9 |
+| `r01_train_nslkdd.py` | 5 imbalance treatments × 5 seeds, Zero-Trust validator | Tables 6–8, 10 |
+| `r02_tables_nslkdd.py` | ablation, per-class recall, Zero-Trust outcome, McNemar | Tables 6–8, 10, Fig. 8 |
+| `r03_baselines_nslkdd.py` | 9 common-protocol baselines (single learners, ROS, B-SMOTE, ADASYN, CTGAN) | Tables 6–8 |
+| `r04_learning_curve.py`, `r05_…analysis.py` | controlled learning curve, C2ST/coverage, changeover CI | Figs. 4–5, Table 9, Alg. 3 |
+| `r06_calibration_nslkdd.py` | calibration, thresholds and validator at matched budgets | Tables 11–12, Figs. 6–7 |
+| `r07_validator_independence.py` | feature lists, error dependence (φ, Yule's Q) | Table 12, Table A1 |
+| `r08_dapt_stages.py` | DAPT 2020 random / Flow-ID-grouped / leave-one-day-out | Tables 4, 13–14, Fig. 9 |
 | `r09_adversarial_nslkdd.py` | FGSM / PGD-20 on the binary decision, transfer to trees | Table 16, Fig. 10 |
 | `r14_iot_corpora.py` | ToN-IoT network and Edge-IIoTset: R / G / U protocols, augmentation | Tables 18–20 |
 | `r15_toniot_telemetry_audit.py` | ToN-IoT telemetry audit (time separation, label conflicts, format leak) | Table 17 |
 | `r16_equal_budget_tuning.py` | 40 Optuna trials per treatment on VAL, 5-seed final scoring | Table 21 |
 | `r17_unsw_confirmatory.py` | pre-registered UNSW-NB15 test (`--run`, `--analyze`) | Tables 22–23 |
 | `r19_unsw_binary_auc.py` | post-hoc (not pre-registered) UNSW-NB15 AUC, recall, FPR | §5.9 (AUC sentence) |
-| `r10_figures.py` | Figs. 1, 3, 5, 6, 8–10 | figures |
+| `r10_figures.py` | Figs. 1, 3, 5, 6, 8–10 (first-revision drafts; printed versions from `round2/make_figs.py`) | figures |
+| `round2/r20_reviewer_analyses.py` | second review round: paired changeover intervals, VAL-matched Zero-Trust comparison, referral cost, effect sizes, DAPT stage split (see `round2/README.md`) | Tables 9, 10, 12, 15, B1; §5.1 |
+| `round2/make_figs.py` | Figs. 1–10 at printed width with 10-pt lettering | Figs. 1–10 |
 | `r11_paper_numbers.py` | collects every quoted number into `out/tables/paper_numbers.json` | all text numbers |
 | `verify_tables.py`, `reproduce_from_predictions.ps1`, `run_full_pipeline.ps1`, `build_package.py` | verification, run order, package and manifest | — |
 | `r12_build_manuscript.py`, `r12_flow_edits.py`, `r13_build_response.py`, `r18_flow_report.py` | authoring tools that build the manuscript, response letter and editing report from `paper_numbers.json` (included in the archive only, not in the public repository, because they contain the unpublished manuscript text; they read the authors' original `.docx` and are not needed to reproduce results) | — |
