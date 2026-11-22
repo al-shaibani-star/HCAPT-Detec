@@ -1,0 +1,47 @@
+[config] Device: cuda | CUDA: True
+[config] GPU: NVIDIA GeForce RTX 5070 Laptop GPU
+[dapt] enp0s3-pvt-thursday.pcap_Flow.csv: no Stage column, skipped
+[r20-E] Tue lr done
+[r20-E] Tue xgb done
+[r20-E] Tue ens done
+[r20-E] Wed lr done
+[r20-E] Wed xgb done
+[r20-E] Wed ens done
+[r20-E] Thu lr done
+[r20-E] Thu xgb done
+[r20-E] Thu ens done
+[r20-E] Fri lr done
+[r20-E] Fri xgb done
+[r20-E] Fri ens done
+   held_out_day model  attack_flows    recall                               recall_wilson       fpr                                    fpr_wilson
+0           Tue    lr         11865  0.521450    (0.5124555480747629, 0.5304298502778445)  0.221138     (0.2154393884958065, 0.22694467199805132)
+1           Tue   xgb         11865  0.225537  (0.21810658364855895, 0.23314567672367492)  0.025960    (0.02384548196540106, 0.02825743127231932)
+2           Tue   ens         11865  0.249558  (0.24185249202975795, 0.25742467415973785)  0.028661  (0.026437538404409603, 0.031066497834805248)
+3           Wed    lr          8636  0.881195    (0.8742006945660789, 0.8878503134061043)  0.089230    (0.08387367116044982, 0.09489332424297732)
+4           Wed   xgb          8636  0.682839    (0.6729446360121195, 0.6925713243730801)  0.014774   (0.01261763321528604, 0.017293592779486368)
+5           Wed   ens          8636  0.771306    (0.7623285791713049, 0.7800424754091403)  0.015358   (0.013155911146191529, 0.01792128693272178)
+6           Thu    lr           137  0.481752    (0.3997257905601771, 0.5647733346982694)  0.145475     (0.1385458203624884, 0.15269033246483657)
+7           Thu   xgb           137  0.620438    (0.5369397166630846, 0.6973660566311694)  0.032153   (0.028798727496101507, 0.03588425468400498)
+8           Thu   ens           137  0.708029     (0.6270502509703795, 0.777659721083332)  0.026707   (0.023658600325501055, 0.03013642910631029)
+9           Fri    lr            27  0.740741     (0.553210695973843, 0.8682979157713322)  0.048935   (0.044867651813960366, 0.05335022260461214)
+10          Fri   xgb            27  0.185185   (0.0818058657428532, 0.36699056505191746)  0.011756  (0.009819139812781314, 0.014070513072013477)
+11          Fri   ens            27  0.185185   (0.0818058657428532, 0.36699056505191746)  0.012058  (0.010093937910710322, 0.014398376229763745)
+   held_out_day               stage model  flows  flow_ids  train_flows_of_stage                             status    recall  wilson_lo  wilson_hi  cluster_lo  cluster_hi
+0           Tue      Reconnaissance    lr  11865      6320                    44  near-unseen (<100 training flows)  0.521450   0.512456   0.530430    0.514105    0.528739
+1           Tue      Reconnaissance   xgb  11865      6320                    44  near-unseen (<100 training flows)  0.225537   0.218107   0.233146    0.217530    0.233617
+2           Tue      Reconnaissance   ens  11865      6320                    44  near-unseen (<100 training flows)  0.249558   0.241852   0.257425    0.240953    0.258655
+3           Wed      Reconnaissance    lr     44        25                 11865                               seen  0.954545   0.848647   0.987445    0.883721    1.000000
+4           Wed  Establish Foothold    lr   8592      4411                    12  near-unseen (<100 training flows)  0.880819   0.873798   0.887501    0.874403    0.887116
+5           Wed      Reconnaissance   xgb     44        25                 11865                               seen  0.590909   0.444095   0.723124    0.441860    0.743605
+6           Wed  Establish Foothold   xgb   8592      4411                    12  near-unseen (<100 training flows)  0.683310   0.673394   0.693063    0.674622    0.692084
+7           Wed      Reconnaissance   ens     44        25                 11865                               seen  0.750000   0.605592   0.854259    0.595732    0.900000
+8           Wed  Establish Foothold   ens   8592      4411                    12  near-unseen (<100 training flows)  0.771415   0.762416   0.780172    0.761726    0.780148
+9           Thu    Lateral Movement    lr    137        90                     0                             unseen  0.481752   0.399726   0.564773    0.384615    0.576171
+10          Thu    Lateral Movement   xgb    137        90                     0                             unseen  0.620438   0.536940   0.697366    0.517241    0.718321
+11          Thu    Lateral Movement   ens    137        90                     0                             unseen  0.708029   0.627050   0.777660    0.605625    0.814524
+12          Fri  Establish Foothold    lr     12         8                  8592                               seen  0.666667   0.390618   0.861882    0.222222    0.933333
+13          Fri   Data Exfiltration    lr     15        15                     0                             unseen  0.800000   0.548141   0.929526    0.600000    1.000000
+14          Fri  Establish Foothold   xgb     12         8                  8592                               seen  0.166667   0.046964   0.448036    0.000000    0.333333
+15          Fri   Data Exfiltration   xgb     15        15                     0                             unseen  0.200000   0.070474   0.451859    0.000000    0.400000
+16          Fri  Establish Foothold   ens     12         8                  8592                               seen  0.166667   0.046964   0.448036    0.000000    0.333333
+17          Fri   Data Exfiltration   ens     15        15                     0                             unseen  0.200000   0.070474   0.451859    0.000000    0.400000

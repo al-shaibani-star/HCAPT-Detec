@@ -1,0 +1,13 @@
+class,gan,split,first_level_with_sustained_ci_above_0,only_terminal,max_abs_mean_delta_n_ge_1000
+DoS,cgan,test,,False,0.016675603217158153
+DoS,cgan,val,,False,0.0006313956020030709
+DoS,wgan,test,,False,0.022493297587131346
+DoS,wgan,val,,False,0.0014369693011104135
+Probe,cgan,test,,False,0.03494423791821566
+Probe,cgan,val,,False,0.0030030030030029574
+Probe,wgan,test,4000.0,True,0.0963238331268071
+Probe,wgan,val,,False,0.0008580008580008735
+R2L,cgan,test,,False,
+R2L,cgan,val,,False,
+R2L,wgan,test,,False,
+R2L,wgan,val,,False,
