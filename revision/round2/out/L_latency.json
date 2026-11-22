@@ -1,0 +1,246 @@
+{
+ "placements": {
+  "gpu": {
+   "cold_first_calls_ms": [
+    53.689300000087314,
+    65.56380000006357,
+    56.00009999989197,
+    54.18859999986125,
+    52.00750000017251
+   ],
+   "warm_single_median_ms": 58.10284999995474,
+   "warm_single_p95_ms": 89.6923999999899,
+   "components_median_ms": {
+    "preprocess": 1.151849999928345,
+    "rf": 50.07884999986345,
+    "xgb": 7.206150000001799,
+    "dnn": 1.0982000000012704,
+    "vote": 0.03709999998591229,
+    "validator": 1.8764000000146552,
+    "policy": 0.05564999992202502
+   },
+   "batch_seconds": {
+    "1": 0.056928250000055414,
+    "4": 0.08300450000001547,
+    "16": 0.09531070000002728,
+    "64": 0.07129750000001422,
+    "256": 0.08212509999998474,
+    "1024": 0.08572815000002265,
+    "4096": 0.10623120000013841,
+    "22544": 0.23466129999997065
+   },
+   "per_flow_us": {
+    "1": 56928.250000055414,
+    "4": 20751.125000003867,
+    "16": 5956.918750001705,
+    "64": 1114.0234375002224,
+    "256": 320.8011718749404,
+    "1024": 83.71889648439712,
+    "4096": 25.935351562533793,
+    "22544": 10.409035663589897
+   }
+  },
+  "cpu": {
+   "cold_first_calls_ms": [
+    65.77500000003056,
+    62.257600000066304,
+    46.80600000006052,
+    48.81730000010975,
+    58.732599999984814
+   ],
+   "warm_single_median_ms": 54.394699999988916,
+   "warm_single_p95_ms": 74.83929499985607,
+   "components_median_ms": {
+    "preprocess": 1.1957500000789878,
+    "rf": 52.00410000009015,
+    "xgb": 3.4380499999997483,
+    "dnn": 0.6587499999568536,
+    "vote": 0.03649999996468978,
+    "validator": 2.1474999998645217,
+    "policy": 0.057099999935417145
+   },
+   "batch_seconds": {
+    "1": 0.06156925000004776,
+    "4": 0.06815094999990379,
+    "16": 0.06609840000010081,
+    "64": 0.06688010000004851,
+    "256": 0.07604419999995571,
+    "1024": 0.08726165000007313,
+    "4096": 0.11898210000003928,
+    "22544": 0.3459674000000632
+   },
+   "per_flow_us": {
+    "1": 61569.25000004776,
+    "4": 17037.73749997595,
+    "16": 4131.150000006301,
+    "64": 1045.0015625007582,
+    "256": 297.047656249827,
+    "1024": 85.21645507819642,
+    "4096": 29.04836425782209,
+    "22544": 15.346318310861568
+   }
+  }
+ },
+ "streaming": [
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 100,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 17.565971200573117,
+   "stable": false,
+   "p50_ms": 2350453.9922355535,
+   "p95_ms": 4463061.344599674,
+   "p99_ms": 4650508.106552658
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 100,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11944.734605841015,
+   "stable": true,
+   "p50_ms": 135.4951954152881,
+   "p95_ms": 176.37394260049106,
+   "p99_ms": 182.1518309819536
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 1000,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 17.565971200573117,
+   "stable": false,
+   "p50_ms": 2796553.2041503694,
+   "p95_ms": 5313632.249293277,
+   "p99_ms": 5537301.354145031
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 1000,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11944.734605841015,
+   "stable": true,
+   "p50_ms": 108.69414438405656,
+   "p95_ms": 141.3642353876298,
+   "p99_ms": 144.60563709373702
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 5000,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 17.565971200573117,
+   "stable": false,
+   "p50_ms": 2836414.978764162,
+   "p95_ms": 5389194.83356895,
+   "p99_ms": 5616100.7886025105
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 5000,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11944.734605841015,
+   "stable": true,
+   "p50_ms": 125.04132751229946,
+   "p95_ms": 162.59943609984694,
+   "p99_ms": 165.94504920147665
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 20000,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 17.565971200573117,
+   "stable": false,
+   "p50_ms": 2843942.4667891604,
+   "p95_ms": 5403446.799533952,
+   "p99_ms": 5630955.128477555
+  },
+  {
+   "placement": "gpu",
+   "arrival_rate_per_s": 20000,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11944.734605841015,
+   "stable": false,
+   "p50_ms": 1786.6216002929546,
+   "p95_ms": 3316.312747259105,
+   "p99_ms": 3449.2298594274216
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 100,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 16.24187398740807,
+   "stable": false,
+   "p50_ms": 2582506.312735171,
+   "p95_ms": 4903956.576636,
+   "p99_ms": 5109967.152947133
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 100,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11734.822800154958,
+   "stable": true,
+   "p50_ms": 100.74136424969993,
+   "p95_ms": 131.08126658748347,
+   "p99_ms": 133.88489332199697
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 1000,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 16.24187398740807,
+   "stable": false,
+   "p50_ms": 3028605.5246499865,
+   "p95_ms": 5754527.481329601,
+   "p99_ms": 5996760.400539506
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 1000,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11734.822800154958,
+   "stable": true,
+   "p50_ms": 101.07554826009846,
+   "p95_ms": 131.3426684952333,
+   "p99_ms": 134.19199792060763
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 5000,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 16.24187398740807,
+   "stable": false,
+   "p50_ms": 3068467.299263779,
+   "p95_ms": 5830090.065605276,
+   "p99_ms": 6075559.834996986
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 5000,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11734.822800154958,
+   "stable": true,
+   "p50_ms": 119.48780131921183,
+   "p95_ms": 155.28391459972363,
+   "p99_ms": 158.46388833498492
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 20000,
+   "serving": "one flow per call",
+   "capacity_flows_per_s": 16.24187398740807,
+   "stable": false,
+   "p50_ms": 3075994.7872887775,
+   "p95_ms": 5844342.031570277,
+   "p99_ms": 6090414.1748720305
+  },
+  {
+   "placement": "cpu",
+   "arrival_rate_per_s": 20000,
+   "serving": "micro-batching",
+   "capacity_flows_per_s": 11734.822800154958,
+   "stable": false,
+   "p50_ms": 1867.3812781754884,
+   "p95_ms": 3464.5035094142577,
+   "p99_ms": 3602.6203594323106
+  }
+ ]
+}

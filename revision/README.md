@@ -82,6 +82,7 @@ only failures we met).
 | `r19_unsw_binary_auc.py` | post-hoc (not pre-registered) UNSW-NB15 AUC, recall, FPR | §5.9 (AUC sentence) |
 | `r10_figures.py` | Figs. 1, 3, 5, 6, 8–10 (first-revision drafts; printed versions from `round2/make_figs.py`) | figures |
 | `round2/r20_reviewer_analyses.py` | second review round: paired changeover intervals, VAL-matched Zero-Trust comparison, referral cost, effect sizes, DAPT stage split (see `round2/README.md`) | Tables 9, 10, 12, 15, B1; §5.1 |
+| `round2/r21_latency_and_sensitivity.py` | second review round: DAPT 2020 P2 cluster intervals, end-to-end latency and streaming benchmark, FIT/VAL split sensitivity | Table 13; §5.6; Tables D1–D3 |
 | `round2/make_figs.py` | Figs. 1–10 at printed width with 10-pt lettering | Figs. 1–10 |
 | `r11_paper_numbers.py` | collects every quoted number into `out/tables/paper_numbers.json` | all text numbers |
 | `verify_tables.py`, `reproduce_from_predictions.ps1`, `run_full_pipeline.ps1`, `build_package.py` | verification, run order, package and manifest | — |
