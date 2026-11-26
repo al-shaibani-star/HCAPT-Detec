@@ -1,0 +1,6 @@
+comparator,mean_only_proposed,mean_only_comparator,p_holm_min,p_holm_max,scipy_underflow_in_old_table
+Ensemble + class weighting only,252.8,408.4,2.6e-21,1.4e-02,False
+Ensemble + SMOTE,177.8,368.4,2.1e-49,4.2e-03,False
+DNN alone (class-weighted),731.4,1414.2,4.6e-63,2.0e-37,False
+Logistic regression (class-weighted),647.2,1835.4,6.4e-185,1.3e-98,False
+Ensemble + WGAN-GP/SMOTE (no ZT),104.4,7.0,2.8e-29,6.2e-15,False

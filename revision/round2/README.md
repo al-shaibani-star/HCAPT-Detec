@@ -1,5 +1,7 @@
 # Second review round — IJIES paper 20267615
 
+This folder also holds `r22_editor_round3.py`, written for the editor's conditional-acceptance items of 2026-11-26.
+
 Analyses and figures added in response to the second round of reviews. They read the frozen artefacts of
 the first revision (`revision/out/…`, including the per-sample predictions of the full archive) and write
 only to their own output folder; nothing in `revision/out` is modified.
@@ -16,6 +18,7 @@ only to their own output folder; nothing in `revision/out` is modified.
 | `r21_latency_and_sensitivity.py` | D: DAPT 2020 protocol P2 re-run with Flow-ID cluster-bootstrap intervals per stage | Table 13 |
 | | L: end-to-end latency from a raw NSL-KDD record to a Zero-Trust action (preprocessing, cold vs. warm calls, GPU vs. CPU placement, batch sizes 1–22,544) and a simulated Poisson stream of 100–20,000 flows/s with one-flow-per-call or micro-batched serving | §4.6, §5.6, Tables D1–D2 |
 | | S: sensitivity to the FIT/VAL split — three additional, independently drawn stratified splits, each with its own preprocessing, validator, WGAN-GP generator and ensembles; the original split is read from the frozen seed-0 predictions | §6.3, Table D3 |
+| `r22_editor_round3.py` | M: exact McNemar p-values and their Holm adjustment computed in log space (no numerical underflow) for Table 8 and UNSW-NB15 hypothesis H2; L: Table D2 streaming simulation re-run with the warm single-flow median of Table D1 as the one-flow service time | Table 8, Table 23, §5.9, §4.6, §5.6, Table D2 |
 | `make_figs.py` | Redraws Figs. 1–10 at their printed width with 10-pt lettering from the stored result files (Fig. 2: PCA fitted on FIT) | Figs. 1–10 |
 
 ## Reproduce
@@ -27,6 +30,7 @@ python revision\round2\r20_reviewer_analyses.py --impl . --out revision\round2\o
 python revision\round2\r20_reviewer_analyses.py --impl . --out revision\round2\out --skip-dapt  # A–D only, no GPU
 python revision\round2\make_figs.py --impl . --out revision\round2\out\figures
 python revision\round2\r21_latency_and_sensitivity.py --impl . --out revision\round2\out --parts DLS   # GPU, about 1.5 h
+python revision\round2\r22_editor_round3.py --impl . --out revision\round2\out   # seconds, no GPU
 ```
 
 Parts A–D need only the stored predictions (`revision/out/preds/*.npz`, full archive) and
@@ -41,8 +45,20 @@ Parts A–D need only the stored predictions (`revision/out/preds/*.npz`, full a
 | `B_zt_val_matched_per_seed.csv`, `B_zt_val_matched_summary.csv` | VAL-matched decision rules on KDDTest+ |
 | `C_referral_counts_per_seed.csv`, `C_referral_prevalence_projection.csv` | referral counts and prevalence projection |
 | `D_effect_sizes_table8.csv` | accuracy differences with 95 % CI |
-| `E_dapt_dayout_per_stage.csv`, `E_dapt_dayout_day_level_rerun.csv`, `E_log.txt` | DAPT 2020 stage split, day-level re-run, run log (the per-flow predictions `E_dapt_dayout_predictions.npz` are, like all `*.npz` files, in the full archive) |
+| `E_dapt_dayout_per_stage.csv`, `E_dapt_dayout_day_level_rerun.csv`, `E_log.txt` | DAPT 2020 stage split, day-level re-run, run log (the per-flow predictions `E_dapt_dayout_predictions.npz` are, like all `*.npz` files, in the release archive) |
 | `D_dapt_p2_cluster.csv` | DAPT 2020 P2 per-stage recall with Wilson and Flow-ID cluster-bootstrap intervals (r21) |
 | `L_latency.json`, `L_streaming_simulation.csv` | end-to-end latency per placement, component and batch size; streaming simulation (r21) |
 | `S_split_sensitivity.csv` | NSL-KDD results for the original and three additional FIT/VAL splits (r21) |
+| `M_mcnemar_nslkdd_logspace.csv`, `M_mcnemar_nslkdd_table8.csv`, `M_mcnemar_unsw_logspace.csv` | per-seed discordant counts, log10 of the exact and Holm-adjusted p, and the Table 8 ranges (r22) |
+| `L2_streaming_simulation.csv` | Table D2 simulation with the one-flow service time equal to the warm single-flow median (r22) |
 | `figures/` | Figs. 1–10 as printed, with `figure_info.json` (printed widths) |
+
+## Release archive
+
+The complete package (code, per-sample predictions, frozen split indices, calibration parameters, Optuna study,
+pre-registration file and every analysis output, with `MANIFEST.sha256`) is attached to the GitHub release
+`ijies-20267615-r3` of this repository and can be downloaded without signing in. After extracting it:
+
+```powershell
+python revision\build_package.py --verify --root .
+```
